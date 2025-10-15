@@ -1,186 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>AUNG THET TUN (ELECTRICAL & MACHINERY TRADING CO.,LTD)</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>AUNG THET TUN (ELECTRICAL & MACHINERY TRADING CO.,LTD)</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link rel="stylesheet" href="css/animate.css">
+	
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="css/magnific-popup.css">
+
+	<link rel="stylesheet" href="css/bootstrap-datepicker.css">
+	<link rel="stylesheet" href="css/jquery.timepicker.css">
+	
+	<link rel="stylesheet" href="css/flaticon.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link favicon href="images/favicon1.jpg" type="image/png" rel="icon">
   
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
-  <link rel="stylesheet" href="css/animate.css">
-  
-  <link rel="stylesheet" href="css/owl.carousel.min.css">
-  <link rel="stylesheet" href="css/owl.theme.default.min.css">
-  <link rel="stylesheet" href="css/magnific-popup.css">
-
-  <link rel="stylesheet" href="css/bootstrap-datepicker.css">
-  <link rel="stylesheet" href="css/jquery.timepicker.css">
-  
-  <link rel="stylesheet" href="css/flaticon.css">
-  <link rel="stylesheet" href="css/style.css">
-  <link favicon href="images/favicon1.jpg" type="image/png" rel="icon">
-  <style>
-    .responsive {
-      max-width: 100%;
-      height: auto;
-    }
-    /* --- Google Font Import --- */
-        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
-        /* --- CSS Variables for Easy Theming --- */
-        :root {
-            --primary-color: #0056b3; /* A professional blue */
-            --secondary-color: #f4f7fa; /* Light grey background */
-            --text-color: #333;
-            --heading-color: #1a2533;
-            --border-color: #ddd;
-            --shadow-color: rgba(0, 0, 0, 0.1);
-        }
-
-        /* --- General Body Styles --- */
-        body {
-            font-family: 'Roboto', sans-serif;
-            line-height: 1.6;
-            color: var(--text-color);
-            background-color: #fff;
-            margin: 0;
-            padding: 20px;
-        }
-
-        /* --- Main Container --- */
-        .generator-solution-container {
-            max-width: 1200px;
-            margin: 40px auto;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 5px 15px var(--shadow-color);
-        }
-        
-        /* --- Header Styling --- */
-        .generator-solution-container h1 {
-            text-align: center;
-            font-size: 2.5rem;
-            color: var(--heading-color);
-            margin-bottom: 30px;
-            font-weight: 700;
-        }
-
-        /* --- Main Content Layout (Flexbox for responsiveness) --- */
-        .main-content {
-            display: flex;
-            gap: 40px;
-            flex-wrap: wrap; /* Allows wrapping for smaller screens */
-        }
-        
-        /* --- Features & Gallery Sections --- */
-        .features, .gallery {
-            flex: 1; /* Each takes up half the space */
-            min-width: 300px; /* Prevents them from getting too squished */
-        }
-
-        .features h2 {
-            font-size: 1.8rem;
-            color: var(--primary-color);
-            border-bottom: 2px solid var(--border-color);
-            padding-bottom: 10px;
-            margin-bottom: 20px;
-        }
-        
-        /* --- Custom Styled List --- */
-        .feature-list {
-            list-style: none;
-            padding-left: 0;
-        }
-
-        .feature-list li {
-            padding-left: 35px; /* Space for the icon */
-            position: relative;
-            margin-bottom: 15px;
-            font-size: 1.1rem;
-        }
-
-        /* Custom checkmark icon using SVG */
-        .feature-list li::before {
-            content: '';
-            position: absolute;
-            left: 0;
-            top: 5px;
-            width: 20px;
-            height: 20px;
-            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="%230056b3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>');
-            background-size: contain;
-            background-repeat: no-repeat;
-        }
-
-        /* --- Image Gallery Styling --- */
-        .gallery {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-        }
-
-        .gallery img {
-            width: 100%;
-            height: auto;
-            border-radius: 8px;
-            box-shadow: 0 4px 10px var(--shadow-color);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .gallery img:hover {
-            transform: scale(1.03);
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-        }
-        
-        /* --- Customer Milestone Callout Box --- */
-        .customer-milestone {
-            margin-top: 40px;
-            padding: 20px 30px;
-            background-color: var(--secondary-color);
-            border-left: 5px solid var(--primary-color);
-            text-align: center;
-            font-size: 1.2rem;
-            font-weight: 700;
-            color: var(--heading-color);
-            border-radius: 0 8px 8px 0;
-        }
-
-        /* --- Responsive Design using Media Queries --- */
-        
-        /* For tablets and smaller devices */
-        @media (max-width: 992px) {
-            .main-content {
-                flex-direction: column; /* Stack the columns */
-            }
-             .generator-solution-container h1 {
-                font-size: 2rem;
-            }
-        }
-        
-        /* For mobile phones */
-        @media (max-width: 576px) {
-            body {
-                padding: 10px;
-            }
-            .generator-solution-container {
-                padding: 15px;
-                margin: 20px auto;
-            }
-            .generator-solution-container h1 {
-                font-size: 1.8rem;
-            }
-            .feature-list li {
-                font-size: 1rem;
-            }
-            .customer-milestone {
-                font-size: 1.1rem;
-                padding: 15px 20px;
-            }
-        }
-</style>
 </head>
 <body>
  <div class="py-1 top">
@@ -193,17 +34,15 @@
 					</p>
 				</div>
 				<div class="col-sm justify-content-center d-flex mb-md-0 mb-2">
-					<div class="social-media">
-						<p class="mb-0 d-flex">
-							<a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-facebook"><i class="sr-only">Facebook</i></span></a>
+					
+				</div>
+				<div class="social-media col-sm-12 col-md-6 col-lg-7 d-flex topper align-items-center text-lg-right justify-content-end">
+					<p class="mb-0 d-flex">
+						<a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-facebook"><i class="sr-only">Facebook</i></span></a>
 							<a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-twitter"><i class="sr-only">Twitter</i></span></a>
 							<a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-instagram"><i class="sr-only">Instagram</i></span></a>
 							<a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-dribbble"><i class="sr-only">Dribbble</i></span></a>
-						</p>
-					</div>
-				</div>
-				<div class="col-sm-12 col-md-6 col-lg-7 d-flex topper align-items-center text-lg-right justify-content-end">
-					<p class="mb-0 register-link"><a href="#" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">Inquire Now</a></p>
+					</p>
 				</div>
 			</div>
 		</div>
@@ -232,9 +71,8 @@
 					<div class="icon d-flex justify-content-center align-items-center"><span class="fa fa-paper-plane"></span>
 					</div>
 					<div class="text pl-3 pl-md-3">
-						<p class="hr"><span>Our Showroom</span></p>
-						<p class="con">UG-102(B),Bld (C), Gonyi Residence,Myanmar Gonyi Street,Kan Taung Ward, Mingalar Taung Nyut Tsp,Yangon,Myanmar.
-</p>
+						<p class="hr"><span>Our Factory</span></p>
+						<p class="con">No.144/82, Tine Tar Min Gyi Street,No.2 Industrial Zone, East Dagon Township,Yangon,Myanmar.</p>
 					</div>
 				</div>
 			</div>
@@ -253,23 +91,22 @@
 					<li class="nav-item"><a href="project.html" class="nav-link">Photo Gallery</a></li>
 					<li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
 				</ul>
-				<a href="#" class="btn-custom" data-toggle="modal" data-target="#exampleModalCenter">Inquire Now</a>
 			</div>
 		</div>
 	</nav>
 	<!-- END nav -->
-
-<section class="hero-wrap hero-wrap-2" style="background-image: url('images/homeimg1.png');" data-stellar-background-ratio="0.5">
-  <div class="overlay"></div>
-  <div class="container">
-    <div class="row no-gutters slider-text align-items-end justify-content-start">
-      <div class="col-md-9 ftco-animate pb-5">
-       <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home <i class="fa fa-chevron-right"></i></a></span> <span>Products <i class="fa fa-chevron-right"></i></span></p>
-       <h1 class="mb-3 bread">Generator Solution</h1>
-     </div>
-   </div>
- </div>
-</section>
+	
+	<section class="hero-wrap hero-wrap-2" style="background-image: url('images/profile.png');" data-stellar-background-ratio="0.5">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="row no-gutters slider-text align-items-end justify-content-start">
+				<div class="col-md-9 ftco-animate pb-5">
+					<p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home <i class="fa fa-chevron-right"></i></a></span> <span><a href="services.html">Products <i class="fa fa-chevron-right"></i></a></span></p>
+					<h1 class="mb-3 bread">Generator Solution</h1>
+				</div>
+			</div>
+		</div>
+	</section>
 <section class="generator-solution-container">
     
     <h1>Generator Solutions</h1>
@@ -305,155 +142,138 @@
 
  
 <footer class="ftco-footer">
-  <div class="container mb-5 pb-4">
-    <div class="row">
-      <div class="col-lg col-md-6">
-        <div class="ftco-footer-widget">
-          <h2 class="ftco-heading-2 d-flex align-items-center">About</h2>
-          <p>Far far away, behind the word mountains, far from the countries.</p>
-          <ul class="ftco-footer-social list-unstyled mt-4">
-            <li><a href="#"><span class="fa fa-twitter"></span></a></li>
-            <li><a href="#"><span class="fa fa-facebook"></span></a></li>
-            <li><a href="#"><span class="fa fa-instagram"></span></a></li>
-          </ul>
-        </div>
-      </div>
+		<div class="container mb-5 pb-4">
+			<div class="row">
+				<div class="col-lg col-md-6">
+					<div class="ftco-footer-widget">
+						<h2 class="ftco-heading-2 d-flex align-items-center">About</h2>
+						<p>Born in June,2012 .Two persons founded ( Aung  & Tun ).One Head office & one factory in Yangon,Myanmar.
+.</p>
+						<ul class="ftco-footer-social list-unstyled mt-4">
+							<li><a href="#"><span class="fa fa-twitter"></span></a></li>
+							<li><a href="#"><span class="fa fa-facebook"></span></a></li>
+							<li><a href="#"><span class="fa fa-instagram"></span></a></li>
+						</ul>
+					</div>
+				</div>
 
-      <div class="col-lg-4 col-md-6">
-        <div class="ftco-footer-widget">
-          <h2 class="ftco-heading-2">Links</h2>
-          <div class="d-flex">
-           <ul class="list-unstyled mr-md-4">
-             <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Project</a></li>
-             <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>About Us</a></li>
-             <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Services</a></li>
-             <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Blog Posts</a></li>
-             <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Industries</a></li>
-           </ul>
-           <ul class="list-unstyled ml-md-5">
-             <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Contact</a></li>
-             <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Help</a></li>
-             <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Privacy Policy</a></li>
-             <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Terms of Use</a></li>
-           </ul>
-         </div>
-       </div>
-     </div>
+				
 
-     <div class="col-lg col-md-6">
-       <div class="ftco-footer-widget">
-        <h2 class="ftco-heading-2">Services</h2>
-        <ul class="list-unstyled">
-          <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Customer Services</a></li>
-          <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Prompt Delivery</a></li>
-          <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Reliable Equipment</a></li>
-          <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>New Heavy Equipment</a></li>
-        </ul>
-      </div>
-    </div>
+				<div class="col-lg col-md-6">
+					<div class="ftco-footer-widget">
+						<h2 class="ftco-heading-2">Services</h2>
+						<ul class="list-unstyled">
+							<li><a href="product1.html"><span class="fa fa-chevron-right mr-2"></span>Generator Solution</a></li>
+							<li><a href="product2.html"><span class="fa fa-chevron-right mr-2"></span>Electrical Products</a></li>
+							<li><a href="product3.html"><span class="fa fa-chevron-right mr-2"></span>LPI<sup>®</sup>Series</a></li>
+							<li><a href="product4.html"><span class="fa fa-chevron-right mr-2"></span>NIMBUS<sup>®</sup>Lightning Rob</a></li>
+						</ul>
+					</div>
+				</div>
 
-    <div class="col-lg col-md-6">
-      <div class="ftco-footer-widget">
-       <h2 class="ftco-heading-2">Have a Questions?</h2>
-       <div class="block-23 mb-3">
-         <ul>
-           <li><span class="fa fa-map-marker mr-3"></span><span class="text">L- 47,48,49, Thiri Yadanar Whole Sales Market Compound, North Okkalapa Township, Yangon.</span></li>
-           <li><a href="#"><span class="fa fa-phone mr-3"></span><span class="text">+959 73109605 ,<br>+959 73100362.</span></a></li>
-           <li><a href="#"><span class="fa fa-paper-plane mr-3"></span><span class="text">info@yourdomain.com</span></a></li>
-         </ul>
-       </div>
-     </div>
-   </div>
- </div>
-</div>
-<div class="container-fluid bg-primary">
- <div class="container">
-  <div class="row">
-   <div class="col-md-6 aside-stretch py-3">
-    
-     <p class="mb-0"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-       Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved<i class="fa fa-heart" aria-hidden="true"></i> by <a href="" target="_blank">Aster</a>
-       <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-     </div>
-   </div>
- </div>
-</div>
-</footer>
+				<div class="col-lg col-md-6">
+					<div class="ftco-footer-widget">
+						<h2 class="ftco-heading-2">Have a Questions?</h2>
+						<div class="block-23 mb-3">
+							<ul>
+								<li><span class="fa fa-map-marker mr-3"></span><span class="text">L- 47,48,49, Thiri Yadanar Whole Sales Market Compound, North Okkalapa Township, Yangon.</span></li>
+								<li><a href="#"><span class="fa fa-phone mr-3"></span><span class="text">+959 73109605 ,<br>+959 73100362.</span></a></li>
+								<li><a href="#"><span class="fa fa-paper-plane mr-3"></span><span class="text">info@yourdomain.com</span></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid bg-primary">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 aside-stretch py-3">
+						
+						<p class="mb-0"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+							Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved <i class="fa fa-heart" aria-hidden="true"></i> by <a href="" target="_blank"> Aster</a>
+							<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		
+		<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close d-flex align-items-center justify-content-center" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true" class="fa fa-close"></span>
+						</button>
+					</div>
+					<div class="modal-body p-4 p-md-5">
+						<form action="#" class="appointment-form ftco-animate">
+							<h3>Request Quote</h3>
+							<div class="">
+								<div class="form-group">
+									<input type="text" class="form-control" placeholder="First Name">
+								</div>
+								<div class="form-group">
+									<input type="text" class="form-control" placeholder="Last Name">
+								</div>
+								<div class="form-group">
+									<input type="text" class="form-control" placeholder="Phone">
+								</div>
+							</div>
+							<div class="">
+								<div class="form-group">
+									<div class="form-field">
+										<div class="select-wrap">
+											<div class="icon"><span class="fa fa-chevron-down"></span></div>
+											<select name="" id="" class="form-control">
+												<option value="">Select Your Services</option>
+												<option value="">Architecture</option>
+												<option value="">Renovation</option>
+												<option value="">Construction</option>
+												<option value="">Interior &amp; Exterior</option>
+												<option value="">Chemical Research</option>
+												<option value="">Petroleum &amp; Gas</option>
+												<option value="">Other Services</option>
+											</select>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="">
+								<div class="form-group">
+									<textarea name="" id="" cols="30" rows="4" class="form-control" placeholder="Message"></textarea>
+								</div>
+								<div class="form-group">
+									<input type="submit" value="Request A Quote" class="btn btn-primary py-3 px-4">
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
 
-<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close d-flex align-items-center justify-content-center" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true" class="fa fa-close"></span>
-        </button>
-      </div>
-      <div class="modal-body p-4 p-md-5">
-       <form action="#" class="appointment-form ftco-animate">
-         <h3>Request Quote</h3>
-         <div class="">
-          <div class="form-group">
-           <input type="text" class="form-control" placeholder="First Name">
-         </div>
-         <div class="form-group">
-           <input type="text" class="form-control" placeholder="Last Name">
-         </div>
-         <div class="form-group">
-           <input type="text" class="form-control" placeholder="Phone">
-         </div>
-       </div>
-       <div class="">
-        <div class="form-group">
-         <div class="form-field">
-          <div class="select-wrap">
-           <div class="icon"><span class="fa fa-chevron-down"></span></div>
-           <select name="" id="" class="form-control">
-            <option value="">Select Your Services</option>
-            <option value="">Architecture</option>
-            <option value="">Renovation</option>
-            <option value="">Construction</option>
-            <option value="">Interior &amp; Exterior</option>
-            <option value="">Chemical Research</option>
-            <option value="">Petroleum &amp; Gas</option>
-            <option value="">Other Services</option>
-          </select>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="">
-    <div class="form-group">
-      <textarea name="" id="" cols="30" rows="4" class="form-control" placeholder="Message"></textarea>
-    </div>
-    <div class="form-group">
-      <input type="submit" value="Request A Quote" class="btn btn-primary py-3 px-4">
-    </div>
-  </div>
-</form>
-</div>
-</div>
-</div>
-</div>
-<!-- loader -->
-<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+		<!-- loader -->
+		<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
 
-<script src="js/jquery.min.js"></script>
-<script src="js/jquery-migrate-3.0.1.min.js"></script>
-<script src="js/popper.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/jquery.easing.1.3.js"></script>
-<script src="js/jquery.waypoints.min.js"></script>
-<script src="js/jquery.stellar.min.js"></script>
-<script src="js/owl.carousel.min.js"></script>
-<script src="js/jquery.magnific-popup.min.js"></script>
-<script src="js/jquery.animateNumber.min.js"></script>
-<script src="js/bootstrap-datepicker.js"></script>
-<script src="js/jquery.timepicker.min.js"></script>
-<script src="js/scrollax.min.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
-<script src="js/google-map.js"></script>
-
-<script src="js/main.js"></script>
-
-</body>
-</html>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery-migrate-3.0.1.min.js"></script>
+		<script src="js/popper.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/jquery.easing.1.3.js"></script>
+		<script src="js/jquery.waypoints.min.js"></script>
+		<script src="js/jquery.stellar.min.js"></script>
+		<script src="js/owl.carousel.min.js"></script>
+		<script src="js/jquery.magnific-popup.min.js"></script>
+		<script src="js/jquery.animateNumber.min.js"></script>
+		<script src="js/bootstrap-datepicker.js"></script>
+		<script src="js/jquery.timepicker.min.js"></script>
+		<script src="js/scrollax.min.js"></script>
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+		<script src="js/google-map.js"></script>
+		
+		<script src="js/main.js"></script>
+		
+	</body>
+	</html>
