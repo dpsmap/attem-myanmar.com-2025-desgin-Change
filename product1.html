@@ -21,7 +21,207 @@
 	<link rel="stylesheet" href="css/flaticon.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link favicon href="images/favicon1.jpg" type="image/png" rel="icon">
-  
+  <style>
+        /* --- Global Styles & Resets --- */
+        :root {
+            --primary-color: #005A9C; /* Professional Blue */
+            --secondary-color: #007BFF; /* Lighter Blue for accents */
+            --text-dark: #333;
+            --text-light: #666;
+            --border-color: #EAECEF;
+            --background-color: #F8F9FA;
+            --card-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* --- Main Product Card --- */
+        .product-card {
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: var(--card-shadow);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        /* --- Card Header --- */
+        .product-header {
+            padding: 2rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .product-header h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--text-dark);
+            margin-bottom: 0.5rem;
+        }
+        
+        /* Decorative underline for the title */
+        .product-header h1::after {
+            content: '';
+            display: block;
+            width: 70px;
+            height: 4px;
+            background-color: var(--primary-color);
+            border-radius: 2px;
+            margin-top: 0.75rem;
+        }
+
+        /* --- Main Content Area (Flex container) --- */
+        .main-content {
+            display: flex;
+            flex-wrap: wrap; /* Allows wrapping on smaller screens */
+        }
+        
+        /* --- Specifications Section (Left Column) --- */
+        .specifications {
+            flex: 1 1 55%; /* Grow, shrink, base width 55% */
+            min-width: 320px; /* Prevent it from getting too small */
+            padding: 2rem;
+            border-right: 1px solid var(--border-color);
+        }
+
+        .specifications h2 {
+            font-size: 1.5rem;
+            font-weight: 500;
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .spec-list {
+            list-style: none;
+        }
+
+        .spec-list li {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.8rem 0;
+            border-bottom: 1px solid var(--border-color);
+            font-size: 0.95rem;
+        }
+
+        .spec-list li:last-child {
+            border-bottom: none;
+        }
+
+        .spec-list .spec-key {
+            font-weight: 500;
+            color: var(--text-dark);
+            margin-right: 1rem;
+        }
+
+        .spec-list .spec-value {
+            color: var(--text-light);
+            text-align: right;
+        }
+
+        /* --- Gallery Section (Right Column) --- */
+        .gallery {
+            flex: 1 1 45%;
+            min-width: 300px;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .gallery h2 {
+            font-size: 1.5rem;
+            font-weight: 500;
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+            width: 100%;
+        }
+
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 1rem;
+            width: 100%;
+        }
+
+        .gallery-image {
+            width: 100%;
+            height: auto;
+            aspect-ratio: 1 / 1; /* Make images square */
+            object-fit: cover;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .gallery-image:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* --- Call to Action Footer --- */
+        .product-footer {
+            text-align: center;
+            padding: 2rem;
+            background-color: #fcfdff;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: var(--secondary-color);
+            color: #fff;
+            padding: 0.8rem 2rem;
+            border-radius: 50px; /* Pill shape */
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1rem;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+        
+        .cta-button:hover {
+            background-color: var(--primary-color);
+            transform: translateY(-2px);
+        }
+        
+        /* --- Responsive Design --- */
+        @media (max-width: 850px) {
+            .main-content {
+                flex-direction: column;
+            }
+            .specifications {
+                border-right: none;
+                border-bottom: 1px solid var(--border-color);
+            }
+            .gallery {
+                align-items: flex-start;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            body {
+                padding: 1rem;
+            }
+            .product-header, .specifications, .gallery, .product-footer {
+                padding: 1.5rem;
+            }
+            .product-header h1 {
+                font-size: 1.5rem;
+            }
+            .specifications h2, .gallery h2 {
+                font-size: 1.25rem;
+            }
+        }
+
+    </style>
 </head>
 <body>
  <div class="py-1 top">
@@ -101,45 +301,45 @@
 		<div class="container">
 			<div class="row no-gutters slider-text align-items-end justify-content-start">
 				<div class="col-md-9 ftco-animate pb-5">
-					<p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home <i class="fa fa-chevron-right"></i></a></span> <span><a href="services.html">Products <i class="fa fa-chevron-right"></i></a></span></p>
+					<p class="breadcrumbs">
+					<span><a href="services.html">Products <i class="fa fa-chevron-right"></i></a></span>
+					<span><a href="product1.html">Generator Solution <i class="fa fa-chevron-right"></i></a></span>
+					<span><a href="product2.html">Electrical Products<i class="fa fa-chevron-right"></i></a></span>
+					<span><a href="product3.html">LPI<sup>®</sup>Series<i class="fa fa-chevron-right"></i></a></span>
+					<span><a href="product4.html">NIMBUS<sup>®</sup>Lightning Rob<i class="fa fa-chevron-right"></i></a></span>
+			</p>
 					<h1 class="mb-3 bread">Generator Solution</h1>
 				</div>
 			</div>
 		</div>
 	</section>
-<section class="generator-solution-container">
-    
-    <h1>Generator Solutions</h1>
-    
-    <div class="main-content">
-        
-        <div class="features">
-            <h2>Key Features</h2>
-            <ul class="feature-list">
-                <li>From 20kVA Up to 3MVA</li>
-                <li>Rpm 1500, Frequency 50Hz</li>
-                <li>DSE Control Panel (ATS controller on request)</li>
-                <li>Available with Aksa, Cummins, Perkins, Baudouin, Mitsubishi, & Hyundai Engines</li>
-                <li>Containerized gensets also available</li>
-                <li>Aksa, Stamford, Marathon, Mecc Alte, & Leroysomer Alternators</li>
-            </ul>
+
+<section class="product-card">
+           <header class="product-header">
+            <h1>Generator Solutions</h1>
+        </header>
+        <div class="main-content">
+            <div class="specifications">
+                <h2>Key Features</h2>
+                <ul class="spec-list">
+                    <li><span class="spec-key">From 20kVA Up to 3MVA</span></li>
+                    <li><span class="spec-key">Rpm 1500, Frequency 50Hz</span></li>
+                    <li><span class="spec-key">DSE Control Panel (ATS controller on request)</span></li>
+                    <li><span class="spec-key">Available with Aksa, Cummins, Perkins, Baudouin, Mitsubishi, & Hyundai Engines</span></li>
+                    <li><span class="spec-key">Containerized gensets also available</span></li>
+                    <li><span class="spec-key">Aksa, Stamford, Marathon, Mecc Alte, & Leroysomer Alternator</span></li>
+                </ul>
+            </div>
+            <div class="gallery">
+                <h2>Product Gallery</h2>
+                <div class="image-grid">
+                    <img src="images/generator1.png" alt="Miniature Circuit Breaker View 1" class="gallery-image">
+                    <img src="images/generator2.png" alt="Miniature Circuit Breaker View 2" class="gallery-image">
+                    <img src="images/generator3.png" alt="Miniature Circuit Breaker View 3" class="gallery-image">
+                </div>
+            </div>
         </div>
-        
-        <div class="gallery">
-            <img src="images/generator1.png" alt="Industrial Diesel Generator" class="responsive" style="width: 200px;; height: 100px;">
-            <img src="images/generator2.png" alt="Containerized Generator Unit" class="responsive" style="width: 200px;; height: 100px;">
-            <img src="images/generator3.png" alt="Generator Control Panel" class="responsive" style="width: 200px;; height: 100px;">
-        </div>
-
-    </div>
-
-    <div class="customer-milestone">
-        <p><strong>We’ve already delivered over 1000 items to our valuable customers.</strong></p>
-    </div>
-
-</section>
-    
-
+    </section>
  
 <footer class="ftco-footer">
 		<div class="container mb-5 pb-4">
@@ -173,6 +373,17 @@
 
 				<div class="col-lg col-md-6">
 					<div class="ftco-footer-widget">
+						<h2 class="ftco-heading-2">Photo Gallery</h2>
+						<ul class="list-unstyled">
+							<li><a href="project.html"><span class="fa fa-chevron-right mr-2"></span>Gallery 1</a></li>
+							<li><a href="project1.html"><span class="fa fa-chevron-right mr-2"></span>Gallery 2</a></li>
+							<li><a href="project2.html"><span class="fa fa-chevron-right mr-2"></span>Gallery 3</a></li>
+							<li><a href="project3.html"><span class="fa fa-chevron-right mr-2"></span>Gallery 4</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg col-md-6">
+					<div class="ftco-footer-widget">
 						<h2 class="ftco-heading-2">Have a Questions?</h2>
 						<div class="block-23 mb-3">
 							<ul>
@@ -191,7 +402,7 @@
 					<div class="col-md-6 aside-stretch py-3">
 						
 						<p class="mb-0"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-							Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved <i class="fa fa-heart" aria-hidden="true"></i> by <a href="" target="_blank"> Aster</a>
+							Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved <i class="fa fa-heart" aria-hidden="true"></i> by <a href="" target="_blank">DPS. Design by Aster</a>
 							<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
 						</div>
 					</div>
