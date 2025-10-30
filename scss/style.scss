@@ -7,7 +7,7 @@ $white: #fff;
 $black: #000000;
 $darken: #232931;
 
-$primary: #fc5e28;
+$primary: #0e3e96;
 $secondary: #040e26;
 
 
@@ -47,7 +47,7 @@ body {
 }
 a, button {
 	transition: .3s all ease;
-	color: $primary;
+	// color: $primary;
 	&:hover, &:focus {
 		text-decoration: none;
 		color: $primary;

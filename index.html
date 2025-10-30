@@ -21,7 +21,9 @@
 	<link rel="stylesheet" href="css/flaticon.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link favicon href="images/favicon1.jpg" type="image/png" rel="icon">
+	<script src="https://kit.fontawesome.com/a2d9d6a64a.js" crossorigin="anonymous"></script>
 <style>
+	
 .clients-section {
     padding: 60px 0;
     background-color: #ffffff; 
@@ -79,6 +81,72 @@
 .client-logo:hover img {
     opacity: 1; 
 }
+.value {
+  width: 300px;
+  height: 100px;
+  padding: 15px;
+  background-color: coral;
+  box-shadow: 10px 10px 5px lightblue;
+}
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.slideshow-container {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.mySlides {
+  display: none;
+}
+
+.mySlides img {
+  width: 100%;
+  border-radius: 16px;
+}
+
+.dot {
+  height: 12px;
+  width: 12px;
+  margin: 0 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.active, .dot:hover {
+  background-color: #007bff;
+}
+
+.fade {
+  opacity: 1;
+  transition: none;
+}
+
+@media (max-width: 768px) {
+  .slideshow-container {
+    margin-bottom: 2rem;
+  }
+}
+  
 </style>
 </head>
 <body>
@@ -110,9 +178,8 @@
 			<div class="row d-flex align-items-start align-items-center px-3 px-md-0">
 				<div class="col-md-4 d-flex mb-2 mb-md-0">
 					<a class="navbar-brand d-flex align-items-center" href="index.html">
-						<img src="images/favicon2.png" alt="logo" style="width: 50px; height: 50px;">
 	
-						 <img src="images/logo1.png" alt="logo" style="width: 200px; height: 60px; margin-left: 10px;">
+						 <img src="images/logo.jpg" alt="logo" style="width: 300px; height: 70px; margin-left: 10px;">
 					</a>
 				</div>
 				<div class="col-md-4 d-flex topper mb-md-0 mb-2 align-items-center">
@@ -156,7 +223,7 @@
 	</nav>
 	<!-- END nav -->
 	
-	<section class="hero-wrap js-fullheight" style="background-image: url('images/home1.png');" data-stellar-background-ratio="0.5">
+	<section class="hero-wrap js-fullheight" style="background-image: url('images/home2.png');" data-stellar-background-ratio="0.5">
 		<div class="overlay"></div>
 		<div class="container">
 			<div class="row no-gutters slider-text js-fullheight align-items-center" data-scrollax-parent="true">
@@ -170,77 +237,99 @@
 			</div>
 		</div>
 	</section>
-
+	<br><br><br><br><br><br>
 	<section class="ftco-section ftco-no-pt ftco-no-pb ftco-services-2">
 		<div class="container">
 			<div class="row no-gutters d-flex">
 				<div class="col-lg-4 d-flex align-self-stretch ftco-animate">
 					<div class="media block-6 services d-flex">
-						<div class="icon justify-content-center align-items-center d-flex"><span class="flaticon-engineer-1"></span></div>
+						<div class="justify-content-center align-items-center d-flex"></div>
 						<div class="media-body pl-4">
 							<h3 class="heading mb-3">Our Value</h3>
-							<p>-Pride In Organization<br>
--Team work & people development<br>
--Customer focus</p>
+							<p><li>Pride In Organization.
+								Team work & people development.
+								Customer focus.</li></p>
 						</div>
 					</div>      
 				</div>
 				<div class="col-lg-4 d-flex align-self-stretch ftco-animate">
 					<div class="media block-6 services services-2 d-flex">
-						<div class="icon justify-content-center align-items-center d-flex"><span class="flaticon-worker-1"></span></div>
+						<div class="justify-content-center align-items-center d-flex"></div>
 						<div class="media-body pl-4">
 							<h3 class="heading mb-3">Our Vision</h3>
-							<p>The market leading company in a target area with excellent competition.</p>
+							<p><li>The market leading company in a target area with excellent competition.</li></p>
 						</div>
 					</div>      
 				</div>
 				<div class="col-lg-4 d-flex align-self-stretch ftco-animate">
 					<div class="media block-6 services d-flex">
-						<div class="icon justify-content-center align-items-center d-flex"><span class="flaticon-engineer"></span></div>
+						<div class="justify-content-center align-items-center d-flex"></div>
 						<div class="media-body pl-4">
 							<h3 class="heading mb-3">Our Mission</h3>
-							<p>We will provide branded products and services of superior quality and value that improve the consumers.</p>
+							<p><li>We will provide branded products and services of superior quality and value that improve the consumers.</li></p>
 						</div>
 					</div>      
 				</div>
 			</div>
 		</div>
 	</section>
+<br><br>
+<section class="ftco-section py-5">
+  <div class="container">
+    <div class="row align-items-center">
+      
+      <!-- Left Column: Slideshow -->
+      <div class="col-lg-6 mb-4 mb-lg-0">
+        <div class="slideshow-container">
 
-	<section class="ftco-section" id="about-section">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-6 d-flex align-items-stretch">
-					<div class="about-wrap img w-100" style="background-image: url(images/homeimg1.png);">
-						<div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-crane"></span></div>
-					</div>
-				</div>
-				<div class="col-md-6 py-5 pl-md-5">
-					<div class="row justify-content-center mb-4 pt-md-4">
-						<div class="col-md-12 heading-section ftco-animate">
-							<span class="subheading">Welcome to ATTEM</span>
-							<h2 class="mb-4">AUNG THET TUN ELECTRICAL & MACHINERY TRADING CO.,LTD.</h2>
-							<div class="d-flex about">
-								<div class="icon"><span class="flaticon-hammer"></span></div>
-								<h3>We're in this business since June, 2012  and Enter to Machinery Business in 2014. Over 50 employed.</h3>
-							</div>
-							<h4 class="ml-4">What We Do</h4>
-							<p>(1) Power Package Provider Business<br>
-  (2) Diesel Power Generators Sales & Service<br>
-  (3) Lightning Protection System<br>
-  (4) LS Product Distribution<br>
-  (5) Power Station Provider  (66kV,33kV,11kV,0.4kV )
-</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	
+  <div class="mySlides">
+    <img src="images/002.jpg" alt="Slide 1" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <img src="images/003.jpg" alt="Slide 2" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <img src="images/004.png" alt="Slide 3" style="width:100%">
+  </div>
+</div>
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>  
+</div>
+      <div class="col-lg-6">
+        <div class="heading-section ftco-animate">
+          <span class="subheading text-primary">Welcome to ATTEM</span>
+          <h3 class="mb-4 font-weight-bold">AUNG THET TUN ELECTRICAL & MACHINERY TRADING CO., LTD.</h3>
+          
+          <div class="d-flex about mb-3">
+            <div class="mr-3 text-primary">
+              <!-- <i class="fa-solid fa-bolt text-2xl"></i> -->
+            </div>
+            <h5>We're in this business since June 2012 and entered the Machinery Business in 2014. Over 50 employees.</h5>
+          </div>
+
+          <h4 class="mt-4">What We Do</h4>
+          <p>
+            (1) Power Package Provider Business<br>
+            (2) Diesel Power Generators Sales & Service<br>
+            (3) Lightning Protection System<br>
+            (4) LS Product Distribution<br>
+            (5) Power Station Provider (66kV, 33kV, 11kV, 0.4kV)
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
 	<section class="clients-section py-16 bg-gradient-to-br from-blue-50 via-white to-blue-50 text-center px-4">
   <!-- Heading -->
   <div class="mb-10">
+	<br><br>
     <h2 class="text-3xl sm:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-indigo-500 to-blue-700 tracking-widest uppercase">
       OUR VALUABLE CLIENT
     </h2>
@@ -254,19 +343,14 @@
   <div class="flex justify-center">
     <div class="max-w-sm w-full bg-white rounded-3xl shadow-xl hover:shadow-2xl transition-shadow duration-500 overflow-hidden">
       
-      <!-- Logo/Image -->
-      <div class="p-6 flex justify-center items-center bg-gradient-to-r from-blue-50 via-white to-blue-50">
-        <img 
-          src="images/clientimg.JPG" style="width: 600px; height: auto;"
-          alt="Client Logo" 
-          class="w-40 h-40 sm:w-48 sm:h-48 object-contain rounded-xl transition-transform duration-500 hover:scale-105"
-        >
-      </div>
+	  <div>
+		<img src="images/clientimg.JPG" style="width: 70%; height: auto;" alt="Client Logo">
+	  </div>
 
       <!-- Card Body -->
       <div class="p-6 text-center">
         <p class="text-gray-600 text-sm sm:text-base">
-          💙 Building long-term partnerships through trust and excellence.
+          Building long-term partnerships through trust and excellence.
         </p>
       </div>
 
@@ -308,10 +392,10 @@
 					<div class="ftco-footer-widget">
 						<h2 class="ftco-heading-2">Photo Gallery</h2>
 						<ul class="list-unstyled">
-							<li><a href="project.html"><span class="fa fa-chevron-right mr-2"></span>Gallery 1</a></li>
-							<li><a href="project1.html"><span class="fa fa-chevron-right mr-2"></span>Gallery 2</a></li>
-							<li><a href="project2.html"><span class="fa fa-chevron-right mr-2"></span>Gallery 3</a></li>
-							<li><a href="project3.html"><span class="fa fa-chevron-right mr-2"></span>Gallery 4</a></li>
+							<li><a href="project.html"><span class="fa fa-chevron-right mr-2"></span>LS Event Photos</a></li>
+							<li><a href="project1.html"><span class="fa fa-chevron-right mr-2"></span>Reference Photos 1</a></li>
+							<li><a href="project2.html"><span class="fa fa-chevron-right mr-2"></span>Reference Photos 2</a></li>
+							<li><a href="project3.html"><span class="fa fa-chevron-right mr-2"></span>Reference Photos 3</a></li>
 						</ul>
 					</div>
 				</div>
@@ -336,7 +420,7 @@
 					<div class="col-md-6 aside-stretch py-3">
 						
 						<p class="mb-0"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-							Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved <i class="fa fa-heart" aria-hidden="true"></i> by <a href="" target="_blank">DPS. Design by Aster</a>
+							Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved <i class="fa fa-heart" aria-hidden="true"></i> by <a href="" target="_blank">DPS.</a>
 							<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
 						</div>
 					</div>
@@ -419,6 +503,36 @@
 		<script src="js/google-map.js"></script>
 		
 		<script src="js/main.js"></script>
-		
+		<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  const slides = document.getElementsByClassName("mySlides");
+  const dots = document.getElementsByClassName("dot");
+
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+
+  for (let i = 0; i < dots.length; i++) {
+    dots[i].classList.remove("active");
+  }
+
+  slides[slideIndex - 1].style.display = "block";
+  dots[slideIndex - 1].classList.add("active");
+
+  setTimeout(showSlides, 4000); // Change image every 4 seconds
+}
+
+// Allow manual navigation
+function currentSlide(n) {
+  slideIndex = n - 1;
+  showSlides();
+}
+</script>
 	</body>
 	</html>
