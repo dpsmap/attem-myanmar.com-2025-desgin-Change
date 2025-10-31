@@ -2,7 +2,7 @@
 require_once('./config/db.php');
 require_once('./config/helper.php');
 
-session_start();
+
 
 $userId = isset($_SESSION['id']) ? $_SESSION['id'] : null;
 $userName = isset($_SESSION['name']) ? $_SESSION['name'] : '';
@@ -57,6 +57,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $stmt->execute();
 
         header("Location: " . htmlspecialchars($_SERVER["PHP_SELF"]));
+        // echo "<p class=\"p-3 text-primary\">Posting Complete</p>";
+
         exit();
     } catch (PDOException $e) {
         error_log("Post creation failed: " . $e->getMessage());
@@ -162,7 +164,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
                     <hr>
                     <hr>
-                    <div style="">
+                    <div>
+
                         <h5 class="mb-3">Post Lists</h5>
                         <table class="table table-hover border table-bordered display" id="example">
                             <thead class="table-dark">
@@ -239,7 +242,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                                         <p>Post id - <?php echo $row['id'] ?></p>
                                         <h5 class="card-title"><?php echo htmlspecialchars($row['name']); ?></h5>
                                         <p class="card-text text-muted small mb-2"><?php echo isset($row['created_at']) ? htmlspecialchars(date('M j, Y \\a\\t g:ia', strtotime($row['created_at']))) : ''; ?> &middot; by <?php echo htmlspecialchars($userName); ?></p>
-                                        <p class="card-text"><?php echo nl2br(htmlspecialchars($row['description'])); ?></p>
+                                        <p class="card-text"><?php
+                                                                $excerpt = function_exists('mb_substr')
+                                                                    ? mb_substr($row['description'], 0, 100)
+                                                                    : substr($row['description'], 0, 100);
+                                                                echo nl2br(htmlspecialchars($excerpt)) . (strlen($row['description']) > 100 ? '...' : '');
+                                                                echo ' <a href="post.php?id=' . $row['id'] . '">Read more</a>';
+                                                                ?></p>
                                     </div>
                                 </div>
                             </div>
