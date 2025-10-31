@@ -44,15 +44,6 @@ if ($_SERVER["REQUEST_METHOD"] == "GET" && isset($_GET['id'])) {
         <h2>Title: <?= htmlspecialchars($row['name']) ?></h2>
         <p><?= nl2br(htmlspecialchars($row['description'])) ?></p>
         <?php
-
-        // $folder = './uploads/' . $row['id'];
-        // if (is_dir($folder)) {
-
-        //     $images = glob($folder . '/*.{jpg,jpeg,png,gif}', GLOB_BRACE);
-        //     foreach ($images as $img) {
-        //         echo '<img src="' . htmlspecialchars($img) . '" width="200" style="margin:5px;border:1px solid #ccc;">';
-        //     }
-        // }
         ?>
     <?php else: ?>
         <p>Post not found.</p>

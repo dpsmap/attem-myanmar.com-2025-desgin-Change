@@ -163,6 +163,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 
                     <hr>
+                    <div class="" style="background-color: #333;padding:20px"></div>
                     <hr>
                     <div>
 
@@ -249,6 +250,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                                                                 echo nl2br(htmlspecialchars($excerpt)) . (strlen($row['description']) > 100 ? '...' : '');
                                                                 echo ' <a href="post.php?id=' . $row['id'] . '">Read more</a>';
                                                                 ?></p>
+
+                                        <div class="text-end">
+                                            <a href="./delete.php?id=<?php echo $row['id'] ?>" class="btn btn-danger">Delete</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
