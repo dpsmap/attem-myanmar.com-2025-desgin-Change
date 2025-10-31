@@ -97,8 +97,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
 
         img.avatar {
-            width: 40%;
-            border-radius: 50%;
+            width: 30%;
+            /* border-radius: 50%; */
         }
 
         .container {
@@ -126,7 +126,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 <body>
 
-    <h2>Attempt Myanmar Login Form</h2>
+    <!-- <h2>Attempt Myanmar Login</h2> -->
 
     <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
         <div class="imgcontainer">
@@ -141,14 +141,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <input type="password" placeholder="Enter Password" name="password" required>
 
             <button type="submit">Login</button>
-            <label>
+            <!-- <label>
                 <input type="checkbox" checked="checked" name="remember"> Remember me
-            </label>
+            </label> -->
         </div>
 
         <div class="container" style="background-color:#f1f1f1">
-            <button type="button" class="cancelbtn">Cancel</button>
-            <span class="psw">Forgot <a href="#">password?</a></span>
+            <!-- <input type="reset" class="cancelbtn"></input> -->
+            <input type="reset" class="cancelbtn" value="reset">
+            <!-- <span class="psw">Forgot <a href="#">password?</a></span> -->
         </div>
     </form>
 
