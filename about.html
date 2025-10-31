@@ -76,6 +76,235 @@
     margin-bottom: 2rem;
   }
 }
+/* ====== Organization Chart Card ====== */
+.org-card {
+  background: linear-gradient(135deg, #4e73df, #1e3a8a);
+  border-radius: 16px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+  padding: 15px;
+  max-width: 800px;
+  width: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.org-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.org-img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  display: block;
+}
+
+/* ====== Lightbox Styles ====== */
+.lightbox {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  padding-top: 60px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.95);
+}
+
+.lightbox-content {
+  margin: auto;
+  display: block;
+  max-width: 90%;
+  max-height: 85vh;
+  border-radius: 8px;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.close {
+  position: absolute;
+  top: 25px;
+  right: 40px;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.close:hover {
+  color: #aaa;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+
+@media (max-width: 768px) {
+  .org-card {
+    padding: 10px;
+  }
+
+  .close {
+    font-size: 32px;
+    right: 25px;
+  }
+}
+
+.gallery-section {
+  padding: 50px 20px;
+  text-align: center;
+  background: #f9fafb;
+}
+
+.gallery-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.gallery-item {
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+
+.lightbox {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  padding-top: 60px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.lightbox-content {
+  margin: auto;
+  display: block;
+  max-width: 90%;
+  max-height: 80vh;
+  border-radius: 8px;
+}
+
+.close {
+  position: absolute;
+  top: 25px;
+  right: 35px;
+  color: white;
+  font-size: 35px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.close:hover {
+  color: #ccc;
+}
+
+.org-card {
+  background: linear-gradient(135deg, #4e73df, #1e3a8a);
+  border-radius: 16px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+  padding: 15px;
+  max-width: 800px;
+  width: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.org-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.org-img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  display: block;
+}
+.lightbox1 {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  padding-top: 60px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.95);
+}
+
+.lightbox-content1 {
+  margin: auto;
+  display: block;
+  max-width: 90%;
+  max-height: 85vh;
+  border-radius: 8px;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.close1 {
+  position: absolute;
+  top: 25px;
+  right: 40px;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.close1:hover {
+  color: #aaa;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+/* ====== Responsive ====== */
+@media (max-width: 768px) {
+  .org-card {
+    padding: 10px;
+  }
+
+  .close1 {
+    font-size: 32px;
+    right: 25px;
+  }
+}
 	</style>
 </head>
 <body>
@@ -107,7 +336,7 @@
 			<div class="row d-flex align-items-start align-items-center px-3 px-md-0">
 				<div class="col-md-4 d-flex mb-2 mb-md-0">
 					<a class="navbar-brand d-flex align-items-center" href="index.html">
-						<img src="images/logo.jpg" alt="logo" style="width: 300px; height: 70px; margin-left: 10px;">
+						<img src="images/logo.JPG" alt="logo" style="width: 300px; height: 70px; margin-left: 10px;">
 					</a>
 				</div>
 				<div class="col-md-4 d-flex topper mb-md-0 mb-2 align-items-center">
@@ -168,21 +397,29 @@
         <div class="slideshow-container">
 
   <div class="mySlides">
-    <img src="images/002.jpg" alt="Slide 1" style="width:100%">
+    <img src="images/008.png" alt="Slide 1" style="width:90%">
   </div>
 
   <div class="mySlides">
-    <img src="images/003.jpg" alt="Slide 2" style="width:100%">
+    <img src="images/009.JPG" alt="Slide 2" style="width:90%">
   </div>
 
   <div class="mySlides">
-    <img src="images/004.png" alt="Slide 3" style="width:100%">
+    <img src="images/010.JPG" alt="Slide 3" style="width:90%">
+  </div>
+  <div class="mySlides">
+	<img src="images/011.JPG" alt="Slide 4" style="width:90%">
+  </div>
+  <div class="mySlides">
+	<img src="images/012.JPG" alt="Slide 5" style="width:90%">
   </div>
 </div>
 <div style="text-align:center">
   <span class="dot" onclick="currentSlide(1)"></span>
   <span class="dot" onclick="currentSlide(2)"></span>
   <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
 </div>  
 </div>
       <div class="col-lg-6">
@@ -206,100 +443,52 @@ Showroom in Yangon Branch in Nay Pyi Taw. Branch in Mandalay.
     </div>
   </div>
 </section>
-	<section class="ftco-section">
-		<div class="row justify-content-center">
-  <div class="col-lg-10 text-center py-5 bg-secondary">
-    <h3 class="text-white mb-4">🏅 Company Certifications</h3>
+<section class="gallery-section">
+  <h2 class="gallery-title">Our Certifications</h2>
 
-    <div style="
-      display: flex; 
-      justify-content: center; 
-      flex-wrap: wrap; 
-      gap: 20px;
-    ">
-      <div style="
-        background: white; 
-        border-radius: 12px; 
-        box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-        padding: 10px;
-        transition: transform 0.3s ease;
-      " onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
-        <img src="images/cer1.png" alt="Certification 1" style="width:200px; height:300px; border-radius:8px;">
-      </div>
+  <div class="gallery-grid">
+    <div class="gallery-item">
+      <img src="images/cer1.png" alt="Certification 1" onclick="openLightbox(this)">
+    </div>
+    <div class="gallery-item">
+      <img src="images/cer2.png" alt="Certification 2" onclick="openLightbox(this)">
+    </div>
+    <div class="gallery-item">
+      <img src="images/cer3.png" alt="Certification 3" onclick="openLightbox(this)">
+    </div>
+    <div class="gallery-item">
+      <img src="images/cer4.png" alt="Certification 4" onclick="openLightbox(this)">
+    </div>
+  </div>
+  <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <span class="close">&times;</span>
+    <img class="lightbox-content" id="lightbox-img">
+  </div>
+</section>
 
-      <div style="
-        background: white; 
-        border-radius: 12px; 
-        box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-        padding: 10px;
-        transition: transform 0.3s ease;
-      " onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
-        <img src="images/cer2.png" alt="Certification 2" style="width:200px; height:300px; border-radius:8px;">
-      </div>
+	<section class="ftco-section" style="background: #0a192f; padding: 60px 20px;">
+  <div class="row justify-content-center">
+    <div class="col-lg-10 text-center py-5">
+      <h3 class="text-white mb-5" style="font-size: 2rem; font-weight: bold;">Organization Chart</h3>
 
-      <div style="
-        background: white; 
-        border-radius: 12px; 
-        box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-        padding: 10px;
-        transition: transform 0.3s ease;
-      " onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
-        <img src="images/cer3.png" alt="Certification 3" style="width:200px; height:300px; border-radius:8px;">
-      </div>
-
-      <div style="
-        background: white; 
-        border-radius: 12px; 
-        box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-        padding: 10px;
-        transition: transform 0.3s ease;
-      " onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
-        <img src="images/cer4.png" alt="Certification 4" style="width:200px; height:300px; border-radius:8px;">
+      <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 20px;">
+        <div class="org-card" onclick="openLightbox1(this)">
+          <img 
+            src="images/org_pdf.png" 
+            alt="Organization Chart" 
+            class="org-img"
+          >
+        </div>
       </div>
     </div>
   </div>
-</div>
-	</section>
 
-	<section class="ftco-section">
-		<div class="row justify-content-center">
-  <div class="col-lg-10 text-center py-5">
-    <h3 class="text-white mb-4">Organization Chart</h3>
 
-    <div style="
-      display: flex; 
-      justify-content: center; 
-      flex-wrap: wrap; 
-      gap: 20px;
-    ">
-      <div style="
-  background: rgb(73, 124, 243); 
-  border-radius: 12px; 
-  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-  padding: 10px;
-  transition: transform 0.3s ease;
-  max-width: 1000px; 
-  margin: 0 auto;
-" 
-onmouseover="this.style.transform='scale(1.02)'"
-onmouseout="this.style.transform='scale(1)'">
-  
-  <img 
-    src="images/org_pdf.png" 
-    alt="Certification 1" 
-    style="
-      width: 100%; 
-      height: auto; 
-      border-radius: 8px; 
-      display: block;
-    ">
-</div>
-
-    </div>
+  <div id="lightbox1" class="lightbox1" onclick="closeLightbox1()">
+    <span class="close1">&times;</span>
+    <img class="lightbox-content1" id="lightbox-img1">
   </div>
-</div>
-	</section>
-
+</section>
 	<section class="ftco-section">
 		<div class="container">
 			<div class="row justify-content-center mb-5 pb-3">
@@ -369,7 +558,7 @@ Experience over 2 years in Thomas Engineering Automation (Singapore) &rdquo;</p>
 	</section>
 
 	<section class="ftco-section ftco-no-pt ftco-no-pb testimony-section img">
-		<div class="overlay"></div>
+		<div class="overlay">
 		<div class="container">
 			<div class="row ftco-animate justify-content-center">
 				<div class="col-md-6 p-4 pl-md-0 py-md-5 pr-md-5 aside-stretch d-flex align-items-center">
@@ -414,6 +603,7 @@ placed their trust on us and our excellent team of professionals.</p>
 				</div>
 			</div>
 		</div>
+		</div>
 	</section>
 
 	<footer class="ftco-footer">
@@ -450,10 +640,10 @@ placed their trust on us and our excellent team of professionals.</p>
 					<div class="ftco-footer-widget">
 						<h2 class="ftco-heading-2">Photo Gallery</h2>
 						<ul class="list-unstyled">
-							<li><a href="project.html"><span class="fa fa-chevron-right mr-2"></span>Gallery 1</a></li>
-							<li><a href="project1.html"><span class="fa fa-chevron-right mr-2"></span>Gallery 2</a></li>
-							<li><a href="project2.html"><span class="fa fa-chevron-right mr-2"></span>Gallery 3</a></li>
-							<li><a href="project3.html"><span class="fa fa-chevron-right mr-2"></span>Gallery 4</a></li>
+							<li><a href="project.html"><span class="fa fa-chevron-right mr-2"></span>LS Event Photos</a></li>
+							<li><a href="project1.html"><span class="fa fa-chevron-right mr-2"></span>Reference Photos 1</a></li>
+							<li><a href="project2.html"><span class="fa fa-chevron-right mr-2"></span>Reference Photos 2</a></li>
+							<li><a href="project3.html"><span class="fa fa-chevron-right mr-2"></span>Reference Photos 3</a></li>
 						</ul>
 					</div>
 				</div>
@@ -585,10 +775,30 @@ function showSlides() {
   setTimeout(showSlides, 4000); // Change image every 4 seconds
 }
 
-// Allow manual navigation
+
 function currentSlide(n) {
   slideIndex = n - 1;
   showSlides();
+}
+
+function openLightbox(imgElement) {
+  const lightbox = document.getElementById("lightbox");
+  const lightboxImg = document.getElementById("lightbox-img");
+  lightbox.style.display = "block";
+  lightboxImg.src = imgElement.src;
+}
+
+function closeLightbox() {
+  document.getElementById("lightbox").style.display = "none";
+}
+function openLightbox1(element) {
+  const imgSrc = element.querySelector('img').src;
+  document.getElementById("lightbox-img1").src = imgSrc;
+  document.getElementById("lightbox1").style.display = "block";
+}
+
+function closeLightbox1() {
+  document.getElementById("lightbox1").style.display = "none";
 }
 </script>
 	</body>
