@@ -2,7 +2,7 @@
 require_once('./config/db.php');
 require_once('./config/helper.php');
 
-session_start();
+
 
 $userId = isset($_SESSION['id']) ? $_SESSION['id'] : null;
 $userName = isset($_SESSION['name']) ? $_SESSION['name'] : '';
