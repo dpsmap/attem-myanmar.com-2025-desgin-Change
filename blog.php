@@ -21,7 +21,8 @@
 
 	<link rel="stylesheet" href="css/flaticon.css">
 	<link rel="stylesheet" href="css/style.css">
-	<link favicon href="images/favicon2.png" type="image/png" rel="icon">
+	<link favicon href="images/favicon1.jpg" type="image/png" rel="icon">
+	<script src="https://kit.fontawesome.com/a2d9d6a64a.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -37,8 +38,7 @@
 				<div class="col-sm justify-content-center d-flex mb-md-0 mb-2">
 
 				</div>
-				<div
-					class="social-media col-sm-12 col-md-6 col-lg-7 d-flex topper align-items-center text-lg-right justify-content-end">
+				<div class="social-media col-sm-12 col-md-6 col-lg-7 d-flex topper align-items-center text-lg-right justify-content-end">
 					<p class="mb-0 d-flex">
 						<a href="#" class="d-flex align-items-center justify-content-center"><span
 								class="fa fa-facebook-official"><i class="sr-only">Facebook</i></span></a>
@@ -50,7 +50,6 @@
 									class="sr-only"></i></span></a>
 						<a href="#" class="d-flex align-items-center justify-content-center"><span
 								class="fa fa-telegram"><i class="sr-only">Telegram</i></span></a>
-					</p>
 				</div>
 			</div>
 		</div>
@@ -60,6 +59,7 @@
 			<div class="row d-flex align-items-start align-items-center px-3 px-md-0">
 				<div class="col-md-4 d-flex mb-2 mb-md-0">
 					<a class="navbar-brand d-flex align-items-center" href="index.html">
+
 						<img src="images/logo.JPG" alt="logo" style="width: 300px; height: 70px; margin-left: 10px;">
 					</a>
 				</div>
@@ -68,17 +68,17 @@
 						<span class="fa fa-map"></span>
 					</div>
 					<div class="pr-md-4 pl-md-3 pl-3 text">
-						<p class="con"><span>Free Call</span> <span>+959 73109605, +959 73100362</span></p>
+						<p class="con"><span>Free Call</span> <span>+959 73109605, +959 73100362
+							</span></p>
 						<p class="con">Call Us Now 24/7 Customer Support</p>
 					</div>
 				</div>
 				<div class="col-md-4 d-flex topper mb-md-0 align-items-center">
-					<div class="icon d-flex justify-content-center align-items-center"><span class="fa fa-image"></span>
+					<div class="icon d-flex justify-content-center align-items-center"><span class="fa fa-building"></span>
 					</div>
 					<div class="text pl-3 pl-md-3">
-						<p class="hr"><span>Our Showroom</span></p>
-						<p class="con">UG-102(B),Bld (C), Gonyi Residence,Myanmar Gonyi Street,Kan Taung Ward, Mingalar
-							Taung Nyut Tsp,Yangon,Myanmar.
+						<p class="hr"><span>Our Office</span></p>
+						<p class="con">L- 47,48,49, Thiri Yadanar Whole Sales Market Compound, North Okkalapa Township, Yangon.
 						</p>
 					</div>
 				</div>
@@ -87,98 +87,87 @@
 	</div>
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark ftco-navbar-light" id="ftco-navbar">
 		<div class="container d-flex align-items-center">
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
-				aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="fa fa-bars"></span> Menu
 			</button>
 			<div class="collapse navbar-collapse" id="ftco-nav">
 				<ul class="navbar-nav mr-auto">
 					<li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-					<li class="nav-item"><a href="about.html" class="nav-link">Profile</a></li>
-					<li class="nav-item active"><a href="services.html" class="nav-link">Products</a></li>
-					<li class="nav-item"><a href="project.html" class="nav-link">Photo Gallery</a></li>
+					<li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+					<li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+					<li class="nav-item"><a href="project.html" class="nav-link">Projects</a></li>
 					<li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
-					<li class="nav-item"><a href="blog.php" class="nav-link">Blog</a></li>
+					<li class="nav-item active"><a href="blog.php" class="nav-link">Blog</a></li>
 				</ul>
-
 			</div>
 		</div>
 	</nav>
 	<!-- END nav -->
 
-	<section class="hero-wrap hero-wrap-2" style="background-image: url('images/001.jpg');"
-		data-stellar-background-ratio="0.5">
+	<section class="hero-wrap hero-wrap-2" style="background-image: url('images/021.JPG');" data-stellar-background-ratio="0.5">
 		<div class="overlay"></div>
 		<div class="container">
 			<div class="row no-gutters slider-text align-items-end justify-content-start">
 				<div class="col-md-9 ftco-animate pb-5">
-					<p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home <i
-									class="fa fa-chevron-right"></i></a></span> <span><a href="services.html">Products
-								<i class="fa fa-chevron-right"></i></a></span></p>
-					<h1 class="mb-3 bread">Products</h1>
+					<p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home <i class="fa fa-chevron-right"></i></a></span> <span>Our Blog <i class="fa fa-chevron-right"></i></span></p>
+					<h1 class="mb-3 bread">Our Blog</h1>
 				</div>
 			</div>
 		</div>
 	</section>
 
-	<section class="ftco-section bg-half-light">
+	<section class="ftco-section bg-light">
 		<div class="container">
-			<div class="row justify-content-center mb-5 pb-2">
-				<div class="col-md-8 text-center heading-section ftco-animate">
-					<span class="subheading">ATTEM Project Department </span>
-					<h2 class="mb-4">One Stop Solution and Service For MEP Packages.
-						We especially provide Design, Materials, Installation and 24hr hot line service for our
-						Products.</h2>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-3">
-					<div class="services-wrap ftco-animate">
-						<div class="img" style="background-image: url(images/generator1.png);"></div>
-						<div class="text">
+			<div class="row d-flex">
+				<?php
+				date_default_timezone_set("Asia/Yangon");
+				require_once("./config/db.php");
+				require_once("./config/helper.php");
 
-							<h6><strong>Generator Solution</strong></h6>
+				$sql = "SELECT * FROM `posts`";
 
-							<a href="product1.html" class="btn-custom">Read more</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3">
-					<div class="services-wrap ftco-animate">
+				$result = $conn->query($sql);
+				if ($result && $result !== false) {
+					$rows = [];
+					while ($row = $result->fetch(PDO::FETCH_ASSOC)) {
+						$rows[] = $row;
+					}
 
-						<div class="img" style="background-image: url(images/electrical1.png);"></div>
-						<div class="text">
-							<!-- <div class="icon"><span class="flaticon-worker"></span></div> -->
-							<h6><strong>Electrical Products</strong></h6>
+					if (count($rows) > 0) {
+						foreach ($rows as $row) {
+							$id = isset($row['id']) ? intval($row['id']) : 0;
+							$title = isset($row['name']) ? htmlspecialchars($row['name'], ENT_QUOTES, 'UTF-8') : 'Untitled';
+							$desc = isset($row['description']) ? htmlspecialchars($row['description'], ENT_QUOTES, 'UTF-8') : '';
+							$img = isset($row['images']) && $row['images'] !== '' ? htmlspecialchars($row['images'], ENT_QUOTES, 'UTF-8') : 'images/no-image-available-icon-vector.jpg';
+							$created = isset($row['created_at']) && $row['created_at'] ? date('M. d, Y', strtotime($row['created_at'])) : '';
+							// output one blog card (matches the static markup below)
+							echo '<div class="col-lg-4 ftco-animate">
+								<div class="blog-entry">
+									<a href="blog-single.php?id=' . $id . '" class="block-20" style="background-image: url(\'' . $img . '\');">
+									</a>
+									<div class="text d-block">
+										<div class="meta">
+											<p>
+												<a href="#"><span class="fa fa-calendar mr-2"></span>' . $created . '</a>
+												<a href="#"><span class="fa fa-user mr-2"></span>Admin</a>
+												
+											</p>
+										</div>
+										<h3 class="heading"><a href="blog-single.php?id=' . $id . '">' . $title . '</a></h3>
+										<p>' . (strlen($desc) > 150 ? substr($desc, 0, 150) . '...' : $desc) . '</p>
+										<p><a href="blog-single.php?id=' . $id . '" class="btn btn-secondary py-2 px-3">Read more</a></p>
+									</div>
+								</div>
+							</div>';
+						}
+					} else {
+						echo '<div class="col-12"><p>No posts found.</p></div>';
+					}
+				} else {
+					echo '<div class="col-12"><p>Error fetching posts.</p></div>';
+				}
+				?>
 
-							<a href="product2.html" class="btn-custom">Read more</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3">
-					<div class="services-wrap ftco-animate">
-
-						<div class="img" style="background-image: url(images/lpi1.png);"></div>
-						<div class="text">
-							<!-- <div class="icon"><span class="flaticon-hammer"></span></div> -->
-							<h6><strong>LPI<sup>®</sup>Series</strong></h6>
-
-							<a href="product3.html" class="btn-custom">Read more</a>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-md-3">
-					<div class="services-wrap ftco-animate">
-						<div class="img" style="background-image: url(images/nim.png);"></div>
-						<div class="text">
-
-							<h6><strong>NIMBUS<sup>®</sup>Lightning Rob</strong></h6>
-
-							<a href="product4.html" class="btn-custom">Read more</a>
-						</div>
-					</div>
-				</div>
 			</div>
 		</div>
 	</section>
@@ -189,14 +178,13 @@
 				<div class="col-lg col-md-6">
 					<div class="ftco-footer-widget">
 						<h2 class="ftco-heading-2 d-flex align-items-center">About</h2>
-						<p>Born in June,2012 .Two persons founded ( Aung & Tun ).One Head office & one factory in
-							Yangon,Myanmar.
+						<p>Born in June,2012 .Two persons founded ( Aung & Tun ).One Head office & one factory in Yangon,Myanmar.
 						</p>
-						<!-- <ul class="ftco-footer-social list-unstyled mt-4">
+						<ul class="ftco-footer-social list-unstyled mt-4">
 							<li><a href="#"><span class="fa fa-twitter"></span></a></li>
 							<li><a href="#"><span class="fa fa-facebook"></span></a></li>
 							<li><a href="#"><span class="fa fa-instagram"></span></a></li>
-						</ul> -->
+						</ul>
 					</div>
 				</div>
 
@@ -206,29 +194,22 @@
 					<div class="ftco-footer-widget">
 						<h2 class="ftco-heading-2">Services</h2>
 						<ul class="list-unstyled">
-							<li><a href="product1.html"><span class="fa fa-chevron-right mr-2"></span>Generator
-									Solution</a></li>
-							<li><a href="product2.html"><span class="fa fa-chevron-right mr-2"></span>Electrical
-									Products</a></li>
-							<li><a href="product3.html"><span
-										class="fa fa-chevron-right mr-2"></span>LPI<sup>®</sup>Series</a></li>
-							<li><a href="product4.html"><span
-										class="fa fa-chevron-right mr-2"></span>NIMBUS<sup>®</sup>Lightning Rob</a></li>
+							<li><a href="product1.html"><span class="fa fa-chevron-right mr-2"></span>Generator Solution</a></li>
+							<li><a href="product2.html"><span class="fa fa-chevron-right mr-2"></span>Electrical Products</a></li>
+							<li><a href="product3.html"><span class="fa fa-chevron-right mr-2"></span>LPI<sup>®</sup>Series</a></li>
+							<li><a href="product4.html"><span class="fa fa-chevron-right mr-2"></span>NIMBUS<sup>®</sup>Lightning Rob</a></li>
 						</ul>
 					</div>
 				</div>
+
 				<div class="col-lg col-md-6">
 					<div class="ftco-footer-widget">
 						<h2 class="ftco-heading-2">Photo Gallery</h2>
 						<ul class="list-unstyled">
-							<li><a href="project.html"><span class="fa fa-chevron-right mr-2"></span>LS Event Photos</a>
-							</li>
-							<li><a href="project1.html"><span class="fa fa-chevron-right mr-2"></span>Reference Photos
-									1</a></li>
-							<li><a href="project2.html"><span class="fa fa-chevron-right mr-2"></span>Reference Photos
-									2</a></li>
-							<li><a href="project3.html"><span class="fa fa-chevron-right mr-2"></span>Reference Photos
-									3</a></li>
+							<li><a href="project.html"><span class="fa fa-chevron-right mr-2"></span>LS Event Photos</a></li>
+							<li><a href="project1.html"><span class="fa fa-chevron-right mr-2"></span>Reference Photos 1</a></li>
+							<li><a href="project2.html"><span class="fa fa-chevron-right mr-2"></span>Reference Photos 2</a></li>
+							<li><a href="project3.html"><span class="fa fa-chevron-right mr-2"></span>Reference Photos 3</a></li>
 						</ul>
 					</div>
 				</div>
@@ -237,13 +218,9 @@
 						<h2 class="ftco-heading-2">Have a Questions?</h2>
 						<div class="block-23 mb-3">
 							<ul>
-								<li><span class="fa fa-map-marker mr-3"></span><span class="text">L- 47,48,49, Thiri
-										Yadanar Whole Sales Market Compound, North Okkalapa Township, Yangon.</span>
-								</li>
-								<li><a href="#"><span class="fa fa-phone mr-3"></span><span class="text">+959 73109605
-											,<br>+959 73100362.</span></a></li>
-								<li><a href="#"><span class="fa fa-envelope mr-3"></span><span
-											class="text">yezawaung.attem@gmail.com</span></a></li>
+								<li><span class="fa fa-map-marker mr-3"></span><span class="text">L- 47,48,49, Thiri Yadanar Whole Sales Market Compound, North Okkalapa Township, Yangon.</span></li>
+								<li><a href="#"><span class="fa fa-phone mr-3"></span><span class="text">+959 73109605 ,<br>+959 73100362.</span></a></li>
+								<li><a href="#"><span class="fa fa-paper-plane mr-3"></span><span class="text">info@yourdomain.com</span></a></li>
 							</ul>
 						</div>
 					</div>
@@ -255,27 +232,22 @@
 				<div class="row">
 					<div class="col-md-6 aside-stretch py-3">
 
-						<p class="mb-0">
-							<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+						<p class="mb-0"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 							Copyright &copy;<script>
 								document.write(new Date().getFullYear());
-							</script> All rights reserved <i class="fa fa-heart" aria-hidden="true"></i> by <a
-								href="https://www.dpsmap.com/" target="_blank">DPS.</a>
-							<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-						</p>
+							</script> All rights reserved <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://www.dpsmap.com/" target="_blank">DPS.</a>
+							<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
 					</div>
 				</div>
 			</div>
 		</div>
 	</footer>
 
-	<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
-		aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+	<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
 		<div class="modal-dialog modal-dialog-centered" role="document">
 			<div class="modal-content">
 				<div class="modal-header">
-					<button type="button" class="close d-flex align-items-center justify-content-center"
-						data-dismiss="modal" aria-label="Close">
+					<button type="button" class="close d-flex align-items-center justify-content-center" data-dismiss="modal" aria-label="Close">
 						<span aria-hidden="true" class="fa fa-close"></span>
 					</button>
 				</div>
@@ -314,8 +286,7 @@
 						</div>
 						<div class="">
 							<div class="form-group">
-								<textarea name="" id="" cols="30" rows="4" class="form-control"
-									placeholder="Message"></textarea>
+								<textarea name="" id="" cols="30" rows="4" class="form-control" placeholder="Message"></textarea>
 							</div>
 							<div class="form-group">
 								<input type="submit" value="Request A Quote" class="btn btn-primary py-3 px-4">
@@ -330,8 +301,8 @@
 	<!-- loader -->
 	<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
 			<circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
-			<circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
-				stroke="#F96D00" /></svg></div>
+			<circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00" />
+		</svg></div>
 
 	<script src="js/jquery.min.js"></script>
 	<script src="js/jquery-migrate-3.0.1.min.js"></script>
@@ -346,8 +317,7 @@
 	<script src="js/bootstrap-datepicker.js"></script>
 	<script src="js/jquery.timepicker.min.js"></script>
 	<script src="js/scrollax.min.js"></script>
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false">
-	</script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
 	<script src="js/google-map.js"></script>
 
 	<script src="js/main.js"></script>

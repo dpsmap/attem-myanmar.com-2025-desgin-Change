@@ -1,173 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<title>AUNG THET TUN (ELECTRICAL & MACHINERY TRADING CO.,LTD)</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	
+
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
 
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
 	<link rel="stylesheet" href="css/animate.css">
-	
+
 	<link rel="stylesheet" href="css/owl.carousel.min.css">
 	<link rel="stylesheet" href="css/owl.theme.default.min.css">
 	<link rel="stylesheet" href="css/magnific-popup.css">
 
 	<link rel="stylesheet" href="css/bootstrap-datepicker.css">
 	<link rel="stylesheet" href="css/jquery.timepicker.css">
-	
+
 	<link rel="stylesheet" href="css/flaticon.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link favicon href="images/favicon1.jpg" type="image/png" rel="icon">
 	<script src="https://kit.fontawesome.com/a2d9d6a64a.js" crossorigin="anonymous"></script>
-<style>
-	
-.clients-section {
-    padding: 60px 0;
-    background-color: #ffffff; 
-    text-align: center;
-}
+	<style>
+		.clients-section {
+			padding: 60px 0;
+			background-color: #ffffff;
+			text-align: center;
+		}
 
-.clients-section .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
+		.clients-section .container {
+			max-width: 1200px;
+			margin: 0 auto;
+			padding: 0 20px;
+		}
 
-.clients-section h2 {
-    font-size: 2rem;
-    margin-bottom: 50px;
-    color: #333;
-    font-weight: 600;
-}
+		.clients-section h2 {
+			font-size: 2rem;
+			margin-bottom: 50px;
+			color: #333;
+			font-weight: 600;
+		}
 
-.logo-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); 
-    gap: 20px; 
-    align-items: center;
-}
-.client-logo {
-    position: relative; 
-    padding-bottom: 15px; 
-}
+		.logo-grid {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+			gap: 20px;
+			align-items: center;
+		}
+
+		.client-logo {
+			position: relative;
+			padding-bottom: 15px;
+		}
 
 
-.client-logo::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 0; 
-    height: 3px;
-    background-color: #007bff; 
-    transition: width 0.3s ease-in-out;
-}
+		.client-logo::after {
+			content: '';
+			position: absolute;
+			bottom: 0;
+			left: 50%;
+			transform: translateX(-50%);
+			width: 0;
+			height: 3px;
+			background-color: #007bff;
+			transition: width 0.3s ease-in-out;
+		}
 
-.client-logo:hover::after {
-    width: 40%; 
-}
+		.client-logo:hover::after {
+			width: 40%;
+		}
 
-.client-logo img {
-    max-width: 100px; 
-    height: auto;
-    opacity: 0.7;
-    transition: opacity 0.3s ease-in-out;
-}
+		.client-logo img {
+			max-width: 100px;
+			height: auto;
+			opacity: 0.7;
+			transition: opacity 0.3s ease-in-out;
+		}
 
-.client-logo:hover img {
-    opacity: 1; 
-}
-.value {
-  width: 300px;
-  height: 100px;
-  padding: 15px;
-  background-color: coral;
-  box-shadow: 10px 10px 5px lightblue;
-}
-* {
-  box-sizing: border-box;
-}
+		.client-logo:hover img {
+			opacity: 1;
+		}
 
-/* Create two equal columns that floats next to each other */
-.column {
-  float: left;
-  width: 50%;
-  padding: 10px;
-  height: 300px; /* Should be removed. Only for demonstration */
-}
+		.value {
+			width: 300px;
+			height: 100px;
+			padding: 15px;
+			background-color: coral;
+			box-shadow: 10px 10px 5px lightblue;
+		}
 
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-.slideshow-container {
-  position: relative;
-  border-radius: 16px;
-  overflow: hidden;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-}
+		* {
+			box-sizing: border-box;
+		}
 
-.mySlides {
-  display: none;
-}
+		/* Create two equal columns that floats next to each other */
+		.column {
+			float: left;
+			width: 50%;
+			padding: 10px;
+			height: 300px;
+			/* Should be removed. Only for demonstration */
+		}
 
-.mySlides img {
-  width: 100%;
-  border-radius: 16px;
-}
+		/* Clear floats after the columns */
+		.row:after {
+			content: "";
+			display: table;
+			clear: both;
+		}
 
-.dot {
-  height: 12px;
-  width: 12px;
-  margin: 0 5px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: 0.3s;
-  cursor: pointer;
-}
-.active, .dot:hover {
-  background-color: #007bff;
-}
+		.slideshow-container {
+			position: relative;
+			border-radius: 16px;
+			overflow: hidden;
+			box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+		}
 
-.fade {
-  opacity: 1;
-  transition: none;
-}
+		.mySlides {
+			display: none;
+		}
 
-@media (max-width: 768px) {
-  .slideshow-container {
-    margin-bottom: 2rem;
-  }
-}
-  
-</style>
+		.mySlides img {
+			width: 100%;
+			border-radius: 16px;
+		}
+
+		.dot {
+			height: 12px;
+			width: 12px;
+			margin: 0 5px;
+			background-color: #bbb;
+			border-radius: 50%;
+			display: inline-block;
+			transition: 0.3s;
+			cursor: pointer;
+		}
+
+		.active,
+		.dot:hover {
+			background-color: #007bff;
+		}
+
+		.fade {
+			opacity: 1;
+			transition: none;
+		}
+
+		@media (max-width: 768px) {
+			.slideshow-container {
+				margin-bottom: 2rem;
+			}
+		}
+	</style>
 </head>
+
 <body>
 	<div class="py-1 top">
 		<div class="container">
 			<div class="row">
 				<div class="col-sm text-center text-md-left mb-md-0 mb-2 pr-md-4 d-flex topper align-items-center">
-					<p class="mb-0 w-100">
+					<p class="mb-0 w-100 ">
 						<span class="fa fa-envelope">
-						yezawaung.attem@gmail.com</span>
+							<a href="mailto:yezawaung.attem@gmail.com">yezawaung.attem@gmail.com</a></span>
 					</p>
 				</div>
 				<div class="col-sm justify-content-center d-flex mb-md-0 mb-2">
-					
+
 				</div>
-				<div class="social-media col-sm-12 col-md-6 col-lg-7 d-flex topper align-items-center text-lg-right justify-content-end">
+				<div
+					class="social-media col-sm-12 col-md-6 col-lg-7 d-flex topper align-items-center text-lg-right justify-content-end">
 					<p class="mb-0 d-flex">
-						<a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-facebook-official"><i class="sr-only">Facebook</i></span></a>
-							<a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-tumblr-square"><i class="sr-only">Tiktok</i></span></a>
-							<a href="@AttemAKSA" class="d-flex align-items-center justify-content-center"><span class="fa fa-youtube"><i class="sr-only"></i></span></a>
-							<a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-telegram"><i class="sr-only">Telegram</i></span></a>
+						<a href="#" class="d-flex align-items-center justify-content-center"><span
+								class="fa fa-facebook-official"><i class="sr-only">Facebook</i></span></a>
+						<a href="https://www.tiktok.com/@attem318?_r=1&_t=ZS-910QVahFym8"
+							class="d-flex align-items-center justify-content-center"><span
+								class="fa fa-tumblr-square"><i class="sr-only">Tiktok</i></span></a>
+						<a href="https://www.youtube.com/@AttemAKSA"
+							class="d-flex align-items-center justify-content-center"><span class="fa fa-youtube"><i
+									class="sr-only"></i></span></a>
+						<a href="#" class="d-flex align-items-center justify-content-center"><span
+								class="fa fa-telegram"><i class="sr-only">Telegram</i></span></a>
 					</p>
 				</div>
 			</div>
@@ -178,8 +192,8 @@
 			<div class="row d-flex align-items-start align-items-center px-3 px-md-0">
 				<div class="col-md-4 d-flex mb-2 mb-md-0">
 					<a class="navbar-brand d-flex align-items-center" href="index.html">
-	
-						 <img src="images/logo.JPG" alt="logo" style="width: 300px; height: 70px; margin-left: 10px;">
+
+						<img src="images/logo.JPG" alt="logo" style="width: 300px; height: 70px; margin-left: 10px;">
 					</a>
 				</div>
 				<div class="col-md-4 d-flex topper mb-md-0 mb-2 align-items-center">
@@ -188,17 +202,19 @@
 					</div>
 					<div class="pr-md-4 pl-md-3 pl-3 text">
 						<p class="con"><span>Free Call</span> <span>+959 73109605, +959 73100362
-</span></p>
+							</span></p>
 						<p class="con">Call Us Now 24/7 Customer Support</p>
 					</div>
 				</div>
 				<div class="col-md-4 d-flex topper mb-md-0 align-items-center">
-					<div class="icon d-flex justify-content-center align-items-center"><span class="fa fa-building"></span>
+					<div class="icon d-flex justify-content-center align-items-center"><span
+							class="fa fa-building"></span>
 					</div>
 					<div class="text pl-3 pl-md-3">
 						<p class="hr"><span>Our Office</span></p>
-						<p class="con">L- 47,48,49, Thiri Yadanar Whole Sales Market Compound, North Okkalapa Township, Yangon.
-</p>
+						<p class="con">L- 47,48,49, Thiri Yadanar Whole Sales Market Compound, North Okkalapa Township,
+							Yangon.
+						</p>
 					</div>
 				</div>
 			</div>
@@ -206,7 +222,8 @@
 	</div>
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark ftco-navbar-light" id="ftco-navbar">
 		<div class="container d-flex align-items-center">
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
+				aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="fa fa-bars"></span> Menu
 			</button>
 			<div class="collapse navbar-collapse" id="ftco-nav">
@@ -216,15 +233,16 @@
 					<li class="nav-item"><a href="services.html" class="nav-link">Products</a></li>
 					<li class="nav-item"><a href="project.html" class="nav-link">Photo Gallery</a></li>
 					<li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
-					<li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+					<li class="nav-item"><a href="blog.php" class="nav-link">Blog</a></li>
 				</ul>
 				<!-- <a href="#" class="btn-custom" data-toggle="modal" data-target="#exampleModalCenter">Inquire Now</a> -->
 			</div>
 		</div>
 	</nav>
 	<!-- END nav -->
-	
-	<section class="hero-wrap js-fullheight" style="background-image: url('images/014.png');" data-stellar-background-ratio="0.5">
+
+	<section class="hero-wrap js-fullheight" style="background-image: url('images/014.png');"
+		data-stellar-background-ratio="0.5">
 		<div class="overlay"></div>
 		<div class="container">
 			<div class="row no-gutters slider-text js-fullheight align-items-center" data-scrollax-parent="true">
@@ -247,117 +265,127 @@
 						<div class="justify-content-center align-items-center d-flex"></div>
 						<div class="media-body pl-4">
 							<h3 class="heading mb-3">Our Value</h3>
-							<p><li>Pride In Organization.
-								Team work & people development.
-								Customer focus.</li></p>
+							<p>
+								<li>Pride In Organization.
+									Team work & people development.
+									Customer focus.</li>
+							</p>
 						</div>
-					</div>      
+					</div>
 				</div>
 				<div class="col-lg-4 d-flex align-self-stretch ftco-animate">
 					<div class="media block-6 services services-2 d-flex">
 						<div class="justify-content-center align-items-center d-flex"></div>
 						<div class="media-body pl-4">
 							<h3 class="heading mb-3">Our Vision</h3>
-							<p><li>The market leading company in a target area with excellent competition.</li></p>
+							<p>
+								<li>The market leading company in a target area with excellent competition.</li>
+							</p>
 						</div>
-					</div>      
+					</div>
 				</div>
 				<div class="col-lg-4 d-flex align-self-stretch ftco-animate">
 					<div class="media block-6 services d-flex">
 						<div class="justify-content-center align-items-center d-flex"></div>
 						<div class="media-body pl-4">
 							<h3 class="heading mb-3">Our Mission</h3>
-							<p><li>We will provide branded products and services of superior quality and value that improve the consumers.</li></p>
+							<p>
+								<li>We will provide branded products and services of superior quality and value
+									that improve the consumers.</li>
+							</p>
 						</div>
-					</div>      
+					</div>
 				</div>
 			</div>
 		</div>
 	</section>
-<br><br>
-<section class="ftco-section py-5">
-  <div class="container">
-    <div class="row align-items-center">
-      
-      <!-- Left Column: Slideshow -->
-      <div class="col-lg-6 mb-4 mb-lg-0">
-        <div class="slideshow-container">
-
-  <div class="mySlides">
-    <img src="images/002.jpg" alt="Slide 1" style="width:100%">
-  </div>
-
-  <div class="mySlides">
-    <img src="images/003.jpg" alt="Slide 2" style="width:100%">
-  </div>
-
-  <div class="mySlides">
-    <img src="images/004.png" alt="Slide 3" style="width:100%">
-  </div>
-</div>
-<div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span>
-  <span class="dot" onclick="currentSlide(2)"></span>
-  <span class="dot" onclick="currentSlide(3)"></span>
-</div>  
-</div>
-      <div class="col-lg-6">
-        <div class="heading-section ftco-animate">
-          <span class="subheading text-primary">Welcome to ATTEM</span>
-          <h3 class="mb-4 font-weight-bold">AUNG THET TUN ELECTRICAL & MACHINERY TRADING CO., LTD.</h3>
-          
-          <div class="d-flex about mb-3">
-            <div class="mr-3 text-primary">
-              <!-- <i class="fa-solid fa-bolt text-2xl"></i> -->
-            </div>
-            <h5>We're in this business since June 2012 and entered the Machinery Business in 2014. Over 50 employees.</h5>
-          </div>
-
-          <h4 class="mt-4">What We Do</h4>
-          <p>
-            (1) Power Package Provider Business<br>
-            (2) Diesel Power Generators Sales & Service<br>
-            (3) Lightning Protection System<br>
-            (4) LS Product Distribution<br>
-            (5) Power Station Provider (66kV, 33kV, 11kV, 0.4kV)
-          </p>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-	<section class="clients-section py-16 bg-gradient-to-br from-blue-50 via-white to-blue-50 text-center px-4">
-  <!-- Heading -->
-  <div class="mb-10">
 	<br><br>
-    <h2 class="text-3xl sm:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-indigo-500 to-blue-700 tracking-widest uppercase">
-      OUR VALUABLE CLIENT
-    </h2>
-    <div class="w-20 sm:w-24 h-1 bg-blue-500 mx-auto mt-3 rounded-full"></div>
-    <p class="text-gray-600 mt-3 text-sm sm:text-base md:text-lg">
-      We’re proud to partner with trusted organizations worldwide.
-    </p>
-  </div>
+	<section class="ftco-section py-5">
+		<div class="container">
+			<div class="row align-items-center">
 
-  <!-- Single Client Card -->
-  <div class="flex justify-center">
-    <div class="max-w-sm w-full bg-white rounded-3xl shadow-xl hover:shadow-2xl transition-shadow duration-500 overflow-hidden">
-      
-	  <div>
-		<img src="images/clientimg.JPG" style="width: 70%; height: auto;" alt="Client Logo">
-	  </div>
+				<!-- Left Column: Slideshow -->
+				<div class="col-lg-6 mb-4 mb-lg-0">
+					<div class="slideshow-container">
 
-      <!-- Card Body -->
-      <div class="p-6 text-center">
-        <p class="text-gray-600 text-sm sm:text-base">
-          Building long-term partnerships through trust and excellence.
-        </p>
-      </div>
+						<div class="mySlides">
+							<img src="images/002.jpg" alt="Slide 1" style="width:100%">
+						</div>
 
-    </div>
-  </div>
-</section>
+						<div class="mySlides">
+							<img src="images/003.jpg" alt="Slide 2" style="width:100%">
+						</div>
+
+						<div class="mySlides">
+							<img src="images/004.png" alt="Slide 3" style="width:100%">
+						</div>
+					</div>
+					<div style="text-align:center">
+						<span class="dot" onclick="currentSlide(1)"></span>
+						<span class="dot" onclick="currentSlide(2)"></span>
+						<span class="dot" onclick="currentSlide(3)"></span>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="heading-section ftco-animate">
+						<span class="subheading text-primary">Welcome to ATTEM</span>
+						<h3 class="mb-4 font-weight-bold">AUNG THET TUN ELECTRICAL & MACHINERY TRADING CO., LTD.</h3>
+
+						<div class="d-flex about mb-3">
+							<div class="mr-3 text-primary">
+								<!-- <i class="fa-solid fa-bolt text-2xl"></i> -->
+							</div>
+							<h5>We're in this business since June 2012 and entered the Machinery Business in 2014. Over
+								50 employees.</h5>
+						</div>
+
+						<h4 class="mt-4">What We Do</h4>
+						<p>
+							(1) Power Package Provider Business<br>
+							(2) Diesel Power Generators Sales & Service<br>
+							(3) Lightning Protection System<br>
+							(4) LS Product Distribution<br>
+							(5) Power Station Provider (66kV, 33kV, 11kV, 0.4kV)
+						</p>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+	<section class="clients-section py-16 bg-gradient-to-br from-blue-50 via-white to-blue-50 text-center px-4">
+		<!-- Heading -->
+		<div class="mb-10">
+			<br><br>
+			<h2
+				class="text-3xl sm:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-indigo-500 to-blue-700 tracking-widest uppercase">
+				OUR VALUABLE CLIENT
+			</h2>
+			<div class="w-20 sm:w-24 h-1 bg-blue-500 mx-auto mt-3 rounded-full"></div>
+			<p class="text-gray-600 mt-3 text-sm sm:text-base md:text-lg">
+				We’re proud to partner with trusted organizations worldwide.
+			</p>
+		</div>
+
+		<!-- Single Client Card -->
+		<div class="flex justify-center">
+			<div
+				class="max-w-sm w-full bg-white rounded-3xl shadow-xl hover:shadow-2xl transition-shadow duration-500 overflow-hidden">
+
+				<div>
+					<img src="images/clientimg.JPG" style="width: 70%; height: auto;" alt="Client Logo">
+				</div>
+
+				<!-- Card Body -->
+				<div class="p-6 text-center">
+					<p class="text-gray-600 text-sm sm:text-base">
+						Building long-term partnerships through trust and excellence.
+					</p>
+				</div>
+
+			</div>
+		</div>
+	</section>
 
 	<footer class="ftco-footer">
 		<div class="container mb-5 pb-4">
@@ -365,8 +393,9 @@
 				<div class="col-lg col-md-6">
 					<div class="ftco-footer-widget">
 						<h2 class="ftco-heading-2 d-flex align-items-center">About</h2>
-						<p>Born in June,2012 .Two persons founded ( Aung  & Tun ).One Head office & one factory in Yangon,Myanmar.
-</p>
+						<p>Born in June,2012 .Two persons founded ( Aung & Tun ).One Head office & one factory in
+							Yangon,Myanmar.
+						</p>
 						<!-- <ul class="ftco-footer-social list-unstyled mt-4">
 							<li><a href="#"><span class="fa fa-twitter"></span></a></li>
 							<li><a href="#"><span class="fa fa-facebook"></span></a></li>
@@ -375,16 +404,20 @@
 					</div>
 				</div>
 
-				
+
 
 				<div class="col-lg col-md-6">
 					<div class="ftco-footer-widget">
 						<h2 class="ftco-heading-2">Services</h2>
 						<ul class="list-unstyled">
-							<li><a href="product1.html"><span class="fa fa-chevron-right mr-2"></span>Generator Solution</a></li>
-							<li><a href="product2.html"><span class="fa fa-chevron-right mr-2"></span>Electrical Products</a></li>
-							<li><a href="product3.html"><span class="fa fa-chevron-right mr-2"></span>LPI<sup>®</sup>Series</a></li>
-							<li><a href="product4.html"><span class="fa fa-chevron-right mr-2"></span>NIMBUS<sup>®</sup>Lightning Rob</a></li>
+							<li><a href="product1.html"><span class="fa fa-chevron-right mr-2"></span>Generator
+									Solution</a></li>
+							<li><a href="product2.html"><span class="fa fa-chevron-right mr-2"></span>Electrical
+									Products</a></li>
+							<li><a href="product3.html"><span
+										class="fa fa-chevron-right mr-2"></span>LPI<sup>®</sup>Series</a></li>
+							<li><a href="product4.html"><span
+										class="fa fa-chevron-right mr-2"></span>NIMBUS<sup>®</sup>Lightning Rob</a></li>
 						</ul>
 					</div>
 				</div>
@@ -393,10 +426,14 @@
 					<div class="ftco-footer-widget">
 						<h2 class="ftco-heading-2">Photo Gallery</h2>
 						<ul class="list-unstyled">
-							<li><a href="project.html"><span class="fa fa-chevron-right mr-2"></span>LS Event Photos</a></li>
-							<li><a href="project1.html"><span class="fa fa-chevron-right mr-2"></span>Reference Photos 1</a></li>
-							<li><a href="project2.html"><span class="fa fa-chevron-right mr-2"></span>Reference Photos 2</a></li>
-							<li><a href="project3.html"><span class="fa fa-chevron-right mr-2"></span>Reference Photos 3</a></li>
+							<li><a href="project.html"><span class="fa fa-chevron-right mr-2"></span>LS Event Photos</a>
+							</li>
+							<li><a href="project1.html"><span class="fa fa-chevron-right mr-2"></span>Reference Photos
+									1</a></li>
+							<li><a href="project2.html"><span class="fa fa-chevron-right mr-2"></span>Reference Photos
+									2</a></li>
+							<li><a href="project3.html"><span class="fa fa-chevron-right mr-2"></span>Reference Photos
+									3</a></li>
 						</ul>
 					</div>
 				</div>
@@ -406,9 +443,13 @@
 						<h2 class="ftco-heading-2">Have a Questions?</h2>
 						<div class="block-23 mb-3">
 							<ul>
-								<li><span class="fa fa-map-marker mr-3"></span><span class="text">L- 47,48,49, Thiri Yadanar Whole Sales Market Compound, North Okkalapa Township, Yangon.</span></li>
-								<li><a href="#"><span class="fa fa-phone mr-3"></span><span class="text">+959 73109605 ,<br>+959 73100362.</span></a></li>
-								<li><a href="#"><span class="fa fa-envelope mr-3"></span><span class="text">yezawaung.attem@gmail.com</span></a></li>
+								<li><span class="fa fa-map-marker mr-3"></span><span class="text">L- 47,48,49, Thiri
+										Yadanar Whole Sales Market Compound, North Okkalapa Township, Yangon.</span>
+								</li>
+								<li><a href="#"><span class="fa fa-phone mr-3"></span><span class="text">+959 73109605
+											,<br>+959 73100362.</span></a></li>
+								<li><a href="#"><span class="fa fa-envelope mr-3"></span><span
+											class="text">yezawaung.attem@gmail.com</span></a></li>
 							</ul>
 						</div>
 					</div>
@@ -419,121 +460,136 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-6 aside-stretch py-3">
-						
-						<p class="mb-0"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-							Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://www.dpsmap.com/" target="_blank">DPS.</a>
-							<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</footer>
-		
-		<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-			<div class="modal-dialog modal-dialog-centered" role="document">
-				<div class="modal-content">
-					<div class="modal-header">
-						<button type="button" class="close d-flex align-items-center justify-content-center" data-dismiss="modal" aria-label="Close">
-							<span aria-hidden="true" class="fa fa-close"></span>
-						</button>
-					</div>
-					<div class="modal-body p-4 p-md-5">
-						<form action="#" class="appointment-form ftco-animate">
-							<h3>Request Quote</h3>
-							<div class="">
-								<div class="form-group">
-									<input type="text" class="form-control" placeholder="First Name">
-								</div>
-								<div class="form-group">
-									<input type="text" class="form-control" placeholder="Last Name">
-								</div>
-								<div class="form-group">
-									<input type="text" class="form-control" placeholder="Phone">
-								</div>
-							</div>
-							<div class="">
-								<div class="form-group">
-									<div class="form-field">
-										<div class="select-wrap">
-											<div class="icon"><span class="fa fa-chevron-down"></span></div>
-											<select name="" id="" class="form-control">
-												<option value="">Select Your Services</option>
-												<option value="">Architecture</option>
-												<option value="">Renovation</option>
-												<option value="">Construction</option>
-												<option value="">Interior &amp; Exterior</option>
-												<option value="">Chemical Research</option>
-												<option value="">Petroleum &amp; Gas</option>
-												<option value="">Other Services</option>
-											</select>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="">
-								<div class="form-group">
-									<textarea name="" id="" cols="30" rows="4" class="form-control" placeholder="Message"></textarea>
-								</div>
-								<div class="form-group">
-									<input type="submit" value="Request A Quote" class="btn btn-primary py-3 px-4">
-								</div>
-							</div>
-						</form>
+
+						<p class="mb-0">
+							<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+							Copyright &copy;<script>
+								document.write(new Date().getFullYear());
+							</script> All rights reserved <i class="fa fa-heart" aria-hidden="true"></i> by <a
+								href="https://www.dpsmap.com/" target="_blank">DPS.</a>
+							<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+						</p>
 					</div>
 				</div>
 			</div>
 		</div>
+	</footer>
 
-		<!-- loader -->
-		<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+	<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+		aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close d-flex align-items-center justify-content-center"
+						data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true" class="fa fa-close"></span>
+					</button>
+				</div>
+				<div class="modal-body p-4 p-md-5">
+					<form action="#" class="appointment-form ftco-animate">
+						<h3>Request Quote</h3>
+						<div class="">
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="First Name">
+							</div>
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="Last Name">
+							</div>
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="Phone">
+							</div>
+						</div>
+						<div class="">
+							<div class="form-group">
+								<div class="form-field">
+									<div class="select-wrap">
+										<div class="icon"><span class="fa fa-chevron-down"></span></div>
+										<select name="" id="" class="form-control">
+											<option value="">Select Your Services</option>
+											<option value="">Architecture</option>
+											<option value="">Renovation</option>
+											<option value="">Construction</option>
+											<option value="">Interior &amp; Exterior</option>
+											<option value="">Chemical Research</option>
+											<option value="">Petroleum &amp; Gas</option>
+											<option value="">Other Services</option>
+										</select>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="">
+							<div class="form-group">
+								<textarea name="" id="" cols="30" rows="4" class="form-control"
+									placeholder="Message"></textarea>
+							</div>
+							<div class="form-group">
+								<input type="submit" value="Request A Quote" class="btn btn-primary py-3 px-4">
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
 
-		<script src="js/jquery.min.js"></script>
-		<script src="js/jquery-migrate-3.0.1.min.js"></script>
-		<script src="js/popper.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
-		<script src="js/jquery.easing.1.3.js"></script>
-		<script src="js/jquery.waypoints.min.js"></script>
-		<script src="js/jquery.stellar.min.js"></script>
-		<script src="js/owl.carousel.min.js"></script>
-		<script src="js/jquery.magnific-popup.min.js"></script>
-		<script src="js/jquery.animateNumber.min.js"></script>
-		<script src="js/bootstrap-datepicker.js"></script>
-		<script src="js/jquery.timepicker.min.js"></script>
-		<script src="js/scrollax.min.js"></script>
-		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
-		<script src="js/google-map.js"></script>
-		
-		<script src="js/main.js"></script>
-		<script>
-let slideIndex = 0;
-showSlides();
+	<!-- loader -->
+	<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
+			<circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+			<circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+				stroke="#F96D00" /></svg></div>
 
-function showSlides() {
-  const slides = document.getElementsByClassName("mySlides");
-  const dots = document.getElementsByClassName("dot");
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery-migrate-3.0.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.easing.1.3.js"></script>
+	<script src="js/jquery.waypoints.min.js"></script>
+	<script src="js/jquery.stellar.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/jquery.animateNumber.min.js"></script>
+	<script src="js/bootstrap-datepicker.js"></script>
+	<script src="js/jquery.timepicker.min.js"></script>
+	<script src="js/scrollax.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false">
+	</script>
+	<script src="js/google-map.js"></script>
 
-  for (let i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
+	<script src="js/main.js"></script>
+	<script>
+		let slideIndex = 0;
+		showSlides();
 
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}
+		function showSlides() {
+			const slides = document.getElementsByClassName("mySlides");
+			const dots = document.getElementsByClassName("dot");
 
-  for (let i = 0; i < dots.length; i++) {
-    dots[i].classList.remove("active");
-  }
+			for (let i = 0; i < slides.length; i++) {
+				slides[i].style.display = "none";
+			}
 
-  slides[slideIndex - 1].style.display = "block";
-  dots[slideIndex - 1].classList.add("active");
+			slideIndex++;
+			if (slideIndex > slides.length) {
+				slideIndex = 1
+			}
 
-  setTimeout(showSlides, 4000); // Change image every 4 seconds
-}
+			for (let i = 0; i < dots.length; i++) {
+				dots[i].classList.remove("active");
+			}
 
-// Allow manual navigation
-function currentSlide(n) {
-  slideIndex = n - 1;
-  showSlides();
-}
-</script>
-	</body>
-	</html>
+			slides[slideIndex - 1].style.display = "block";
+			dots[slideIndex - 1].classList.add("active");
+
+			setTimeout(showSlides, 4000); // Change image every 4 seconds
+		}
+
+		// Allow manual navigation
+		function currentSlide(n) {
+			slideIndex = n - 1;
+			showSlides();
+		}
+	</script>
+</body>
+
+</html>

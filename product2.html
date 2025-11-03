@@ -1,31 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<title>AUNG THET TUN (ELECTRICAL & MACHINERY TRADING CO.,LTD)</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	
-	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <title>AUNG THET TUN (ELECTRICAL & MACHINERY TRADING CO.,LTD)</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
 
-	<link rel="stylesheet" href="css/animate.css">
-	
-	<link rel="stylesheet" href="css/owl.carousel.min.css">
-	<link rel="stylesheet" href="css/owl.theme.default.min.css">
-	<link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-	<link rel="stylesheet" href="css/bootstrap-datepicker.css">
-	<link rel="stylesheet" href="css/jquery.timepicker.css">
-	
-	<link rel="stylesheet" href="css/flaticon.css">
-	<link rel="stylesheet" href="css/style.css">
-	<link favicon href="images/favicon2.png" type="image/png" rel="icon">
-  <style>
+    <link rel="stylesheet" href="css/animate.css">
+
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css/jquery.timepicker.css">
+
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link favicon href="images/favicon2.png" type="image/png" rel="icon">
+    <style>
         /* --- Global Styles & Resets --- */
         :root {
-            --primary-color: #005A9C; /* Professional Blue */
-            --secondary-color: #007BFF; /* Lighter Blue for accents */
+            --primary-color: #005A9C;
+            /* Professional Blue */
+            --secondary-color: #007BFF;
+            /* Lighter Blue for accents */
             --text-dark: #333;
             --text-light: #666;
             --border-color: #EAECEF;
@@ -50,7 +53,7 @@
             display: flex;
             flex-direction: column;
         }
-        
+
         /* --- Card Header --- */
         .product-header {
             padding: 2rem;
@@ -63,7 +66,7 @@
             color: var(--text-dark);
             margin-bottom: 0.5rem;
         }
-        
+
         /* Decorative underline for the title */
         .product-header h1::after {
             content: '';
@@ -78,13 +81,16 @@
         /* --- Main Content Area (Flex container) --- */
         .main-content {
             display: flex;
-            flex-wrap: wrap; /* Allows wrapping on smaller screens */
+            flex-wrap: wrap;
+            /* Allows wrapping on smaller screens */
         }
-        
+
         /* --- Specifications Section (Left Column) --- */
         .specifications {
-            flex: 1 1 55%; /* Grow, shrink, base width 55% */
-            min-width: 320px; /* Prevent it from getting too small */
+            flex: 1 1 55%;
+            /* Grow, shrink, base width 55% */
+            min-width: 320px;
+            /* Prevent it from getting too small */
             padding: 2rem;
             border-right: 1px solid var(--border-color);
         }
@@ -135,7 +141,7 @@
             flex-direction: column;
             align-items: center;
         }
-        
+
         .gallery h2 {
             font-size: 1.5rem;
             font-weight: 500;
@@ -154,19 +160,20 @@
         .gallery-image {
             width: 100%;
             height: auto;
-            aspect-ratio: 1 / 1; /* Make images square */
+            aspect-ratio: 1 / 1;
+            /* Make images square */
             object-fit: cover;
             border-radius: 8px;
             border: 1px solid var(--border-color);
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
-        
+
         .gallery-image:hover {
             transform: scale(1.05);
             box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
         }
-        
+
         /* --- Call to Action Footer --- */
         .product-footer {
             text-align: center;
@@ -180,140 +187,163 @@
             background-color: var(--secondary-color);
             color: #fff;
             padding: 0.8rem 2rem;
-            border-radius: 50px; /* Pill shape */
+            border-radius: 50px;
+            /* Pill shape */
             text-decoration: none;
             font-weight: 500;
             font-size: 1rem;
             transition: background-color 0.3s ease, transform 0.2s ease;
         }
-        
+
         .cta-button:hover {
             background-color: var(--primary-color);
             transform: translateY(-2px);
         }
-        
+
         /* --- Responsive Design --- */
         @media (max-width: 850px) {
             .main-content {
                 flex-direction: column;
             }
+
             .specifications {
                 border-right: none;
                 border-bottom: 1px solid var(--border-color);
             }
+
             .gallery {
                 align-items: flex-start;
             }
         }
-        
+
         @media (max-width: 480px) {
             body {
                 padding: 1rem;
             }
-            .product-header, .specifications, .gallery, .product-footer {
+
+            .product-header,
+            .specifications,
+            .gallery,
+            .product-footer {
                 padding: 1.5rem;
             }
+
             .product-header h1 {
                 font-size: 1.5rem;
             }
-            .specifications h2, .gallery h2 {
+
+            .specifications h2,
+            .gallery h2 {
                 font-size: 1.25rem;
             }
         }
-
     </style>
 </head>
-<body>
-	<div class="py-1 top">
-		<div class="container">
-			<div class="row">
-				<div class="col-sm text-center text-md-left mb-md-0 mb-2 pr-md-4 d-flex topper align-items-center">
-					<p class="mb-0 w-100">
-						<span class="fa fa-envelope">
-						yezawaung.attem@gmail.com</span>
-					</p>
-				</div>
-				<div class="col-sm justify-content-center d-flex mb-md-0 mb-2">
-					
-				</div>
-				<div class="social-media col-sm-12 col-md-6 col-lg-7 d-flex topper align-items-center text-lg-right justify-content-end">
-					<p class="mb-0 d-flex">
-						<a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-facebook-official"><i class="sr-only">Facebook</i></span></a>
-							<a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-tumblr-square"><i class="sr-only">Twitter</i></span></a>
-							<a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-youtube"><i class="sr-only">Instagram</i></span></a>
-							<a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-telegram"><i class="sr-only">Dribbble</i></span></a>
-					</p>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="pt-4 pb-5">
-		<div class="container">
-			<div class="row d-flex align-items-start align-items-center px-3 px-md-0">
-				<div class="col-md-4 d-flex mb-2 mb-md-0">
-					<a class="navbar-brand d-flex align-items-center" href="index.html">
-						<img src="images/logo.JPG" alt="logo" style="width: 300px; height: 70px; margin-left: 10px;">
-					</a>
-				</div>
-				<div class="col-md-4 d-flex topper mb-md-0 mb-2 align-items-center">
-					<div class="icon d-flex justify-content-center align-items-center">
-						<span class="fa fa-map"></span>
-					</div>
-					<div class="pr-md-4 pl-md-3 pl-3 text">
-						<p class="con"><span>Free Call</span> <span>+959 73109605, +959 73100362</span></p>
-						<p class="con">Call Us Now 24/7 Customer Support</p>
-					</div>
-				</div>
-				<div class="col-md-4 d-flex topper mb-md-0 align-items-center">
-					<div class="icon d-flex justify-content-center align-items-center"><span class="fa fa-paper-plane"></span>
-					</div>
-					<div class="text pl-3 pl-md-3">
-						<p class="hr"><span>Our Factory</span></p>
-						<p class="con">No.144/82, Tine Tar Min Gyi Street,No.2 Industrial Zone, East Dagon Township,Yangon,Myanmar.</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<nav class="navbar navbar-expand-lg navbar-dark bg-dark ftco-navbar-light" id="ftco-navbar">
-		<div class="container d-flex align-items-center">
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="fa fa-bars"></span> Menu
-			</button>
-			<div class="collapse navbar-collapse" id="ftco-nav">
-				<ul class="navbar-nav mr-auto">
-					<li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-					<li class="nav-item"><a href="about.html" class="nav-link">Profile</a></li>
-					<li class="nav-item active"><a href="services.html" class="nav-link">Products</a></li>
-					<li class="nav-item"><a href="project.html" class="nav-link">Photo Gallery</a></li>
-					<li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
-                    <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
-				</ul>
-			</div>
-		</div>
-	</nav>
-	<!-- END nav -->
-	
-	<section class="hero-wrap hero-wrap-2" style="background-image: url('images/015.png');" data-stellar-background-ratio="0.5">
-		<div class="overlay"></div>
-		<div class="container">
-			<div class="row no-gutters slider-text align-items-end justify-content-start">
-				<div class="col-md-9 ftco-animate pb-5">
-					<p class="breadcrumbs">
-					<span><a href="services.html">Products <i class="fa fa-chevron-right"></i></a></span>
-					<span><a href="product1.html">Generator Solution <i class="fa fa-chevron-right"></i></a></span>
-					<span><a href="product2.html">Electrical Products<i class="fa fa-chevron-right"></i></a></span>
-					<span><a href="product3.html">LPI<sup>®</sup>Series<i class="fa fa-chevron-right"></i></a></span>
-					<span><a href="product4.html">NIMBUS<sup>®</sup>Lightning Rob<i class="fa fa-chevron-right"></i></a></span>
-			</p>
-					<h1 class="mb-3 bread">Electrical Products</h1>
-				</div>
-			</div>
-		</div>
-	</section>
 
-  <section class="product-card">
-           <header class="product-header">
+<body>
+    <div class="py-1 top">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm text-center text-md-left mb-md-0 mb-2 pr-md-4 d-flex topper align-items-center">
+                    <p class="mb-0 w-100">
+                        <span class="fa fa-envelope">
+                            yezawaung.attem@gmail.com</span>
+                    </p>
+                </div>
+                <div class="col-sm justify-content-center d-flex mb-md-0 mb-2">
+
+                </div>
+                <div
+                    class="social-media col-sm-12 col-md-6 col-lg-7 d-flex topper align-items-center text-lg-right justify-content-end">
+                    <p class="mb-0 d-flex">
+                        <a href="#" class="d-flex align-items-center justify-content-center"><span
+                                class="fa fa-facebook-official"><i class="sr-only">Facebook</i></span></a>
+                        <a href="https://www.tiktok.com/@attem318?_r=1&_t=ZS-910QVahFym8"
+                            class="d-flex align-items-center justify-content-center"><span
+                                class="fa fa-tumblr-square"><i class="sr-only">Tiktok</i></span></a>
+                        <a href="https://www.youtube.com/@AttemAKSA"
+                            class="d-flex align-items-center justify-content-center"><span class="fa fa-youtube"><i
+                                    class="sr-only"></i></span></a>
+                        <a href="#" class="d-flex align-items-center justify-content-center"><span
+                                class="fa fa-telegram"><i class="sr-only">Telegram</i></span></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pt-4 pb-5">
+        <div class="container">
+            <div class="row d-flex align-items-start align-items-center px-3 px-md-0">
+                <div class="col-md-4 d-flex mb-2 mb-md-0">
+                    <a class="navbar-brand d-flex align-items-center" href="index.html">
+                        <img src="images/logo.JPG" alt="logo" style="width: 300px; height: 70px; margin-left: 10px;">
+                    </a>
+                </div>
+                <div class="col-md-4 d-flex topper mb-md-0 mb-2 align-items-center">
+                    <div class="icon d-flex justify-content-center align-items-center">
+                        <span class="fa fa-map"></span>
+                    </div>
+                    <div class="pr-md-4 pl-md-3 pl-3 text">
+                        <p class="con"><span>Free Call</span> <span>+959 73109605, +959 73100362</span></p>
+                        <p class="con">Call Us Now 24/7 Customer Support</p>
+                    </div>
+                </div>
+                <div class="col-md-4 d-flex topper mb-md-0 align-items-center">
+                    <div class="icon d-flex justify-content-center align-items-center"><span
+                            class="fa fa-paper-plane"></span>
+                    </div>
+                    <div class="text pl-3 pl-md-3">
+                        <p class="hr"><span>Our Factory</span></p>
+                        <p class="con">No.144/82, Tine Tar Min Gyi Street,No.2 Industrial Zone, East Dagon
+                            Township,Yangon,Myanmar.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark ftco-navbar-light" id="ftco-navbar">
+        <div class="container d-flex align-items-center">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
+                aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="fa fa-bars"></span> Menu
+            </button>
+            <div class="collapse navbar-collapse" id="ftco-nav">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">Profile</a></li>
+                    <li class="nav-item active"><a href="services.html" class="nav-link">Products</a></li>
+                    <li class="nav-item"><a href="project.html" class="nav-link">Photo Gallery</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li class="nav-item"><a href="blog.php" class="nav-link">Blog</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- END nav -->
+
+    <section class="hero-wrap hero-wrap-2" style="background-image: url('images/015.png');"
+        data-stellar-background-ratio="0.5">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row no-gutters slider-text align-items-end justify-content-start">
+                <div class="col-md-9 ftco-animate pb-5">
+                    <p class="breadcrumbs">
+                        <span><a href="services.html">Products <i class="fa fa-chevron-right"></i></a></span>
+                        <span><a href="product1.html">Generator Solution <i class="fa fa-chevron-right"></i></a></span>
+                        <span><a href="product2.html">Electrical Products<i class="fa fa-chevron-right"></i></a></span>
+                        <span><a href="product3.html">LPI<sup>®</sup>Series<i
+                                    class="fa fa-chevron-right"></i></a></span>
+                        <span><a href="product4.html">NIMBUS<sup>®</sup>Lightning Rob<i
+                                    class="fa fa-chevron-right"></i></a></span>
+                    </p>
+                    <h1 class="mb-3 bread">Electrical Products</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="product-card">
+        <header class="product-header">
             <h1>Miniature Circuit Breaker (MCB)</h1>
         </header>
         <div class="main-content">
@@ -321,15 +351,21 @@
                 <h2>Technical Specifications</h2>
                 <ul class="spec-list">
                     <li><span class="spec-key">Series</span> <span class="spec-value">L Series</span></li>
-                    <li><span class="spec-key">Standard</span> <span class="spec-value">IEC 60898-1, IEC 60947-2</span></li>
-                    <li><span class="spec-key">Poles</span> <span class="spec-value">1P, 1P+N, 2P, 3P, 3P+N, 4P</span></li>
-                    <li><span class="spec-key">Mechanical Durability</span> <span class="spec-value">20,000 cycles</span></li>
-                    <li><span class="spec-key">Electrical Durability</span> <span class="spec-value">10,000 cycles</span></li>
+                    <li><span class="spec-key">Standard</span> <span class="spec-value">IEC 60898-1, IEC 60947-2</span>
+                    </li>
+                    <li><span class="spec-key">Poles</span> <span class="spec-value">1P, 1P+N, 2P, 3P, 3P+N, 4P</span>
+                    </li>
+                    <li><span class="spec-key">Mechanical Durability</span> <span class="spec-value">20,000
+                            cycles</span></li>
+                    <li><span class="spec-key">Electrical Durability</span> <span class="spec-value">10,000
+                            cycles</span></li>
                     <li><span class="spec-key">Frame Size (AF)</span> <span class="spec-value">Up to 125AF</span></li>
-                    <li><span class="spec-key">Rated Voltage (Ue)</span> <span class="spec-value">240/415V AC, 70/125V DC</span></li>
+                    <li><span class="spec-key">Rated Voltage (Ue)</span> <span class="spec-value">240/415V AC, 70/125V
+                            DC</span></li>
                     <li><span class="spec-key">Trip Curve</span> <span class="spec-value">B, C, D Curve</span></li>
                     <li><span class="spec-key">Rated Current (In)</span> <span class="spec-value">Up to 125A</span></li>
-                    <li><span class="spec-key">Breaking Capacity (Icu)</span> <span class="spec-value">6kA ~ 10kA</span></li>
+                    <li><span class="spec-key">Breaking Capacity (Icu)</span> <span class="spec-value">6kA ~ 10kA</span>
+                    </li>
                 </ul>
             </div>
             <div class="gallery">
@@ -343,9 +379,9 @@
         </div>
     </section>
 
-<br>
+    <br>
     <section class="product-card">
-           <header class="product-header">
+        <header class="product-header">
             <h1>RCBO(Residual Current Breaker with Overcurrent protection)</h1>
         </header>
         <div class="main-content">
@@ -356,10 +392,12 @@
                     <li><span class="spec-key">Standard</span> <span class="spec-value">IEC/EN 61009-1</span></li>
                     <li><span class="spec-key">Poles</span> <span class="spec-value">1P+N, 3P+N</span></li>
                     <li><span class="spec-key">Frame Size (AF)</span> <span class="spec-value">Up to 100AF</span></li>
-                    <li><span class="spec-key">Rated Voltage (Ue)</span> <span class="spec-value">230/240V AC</span></li>
+                    <li><span class="spec-key">Rated Voltage (Ue)</span> <span class="spec-value">230/240V AC</span>
+                    </li>
                     <li><span class="spec-key">Type</span> <span class="spec-value">AC</span></li>
                     <li><span class="spec-key">Rated Current (In)</span> <span class="spec-value">6A to 63A</span></li>
-                    <li><span class="spec-key">Breaking Capacity (Icu)</span> <span class="spec-value">6~10ka</span></li>
+                    <li><span class="spec-key">Breaking Capacity (Icu)</span> <span class="spec-value">6~10ka</span>
+                    </li>
                 </ul>
             </div>
             <div class="gallery">
@@ -371,9 +409,9 @@
             </div>
         </div>
     </section>
-<br>
+    <br>
     <section class="product-card">
-           <header class="product-header">
+        <header class="product-header">
             <h1>Residual Current Circuit Breaker</h1>
         </header>
         <div class="main-content">
@@ -384,10 +422,12 @@
                     <li><span class="spec-key">Standard</span> <span class="spec-value">IEC/EN 61008-1</span></li>
                     <li><span class="spec-key">Poles</span> <span class="spec-value">1P+N,3P+N,N</span></li>
                     <li><span class="spec-key">Frame Size (AF)</span> <span class="spec-value">Up to 100AF</span></li>
-                    <li><span class="spec-key">Rated Voltage (Ue)</span> <span class="spec-value">230/240V AC</span></li>
+                    <li><span class="spec-key">Rated Voltage (Ue)</span> <span class="spec-value">230/240V AC</span>
+                    </li>
                     <li><span class="spec-key">Type</span> <span class="spec-value">AC</span></li>
                     <li><span class="spec-key">Rated Current (In)</span> <span class="spec-value">16A to 80A</span></li>
-                    <li><span class="spec-key">Sensibility(mA)</span> <span class="spec-value">30mA,100mA,300mA,</span></li>
+                    <li><span class="spec-key">Sensibility(mA)</span> <span class="spec-value">30mA,100mA,300mA,</span>
+                    </li>
                 </ul>
             </div>
             <div class="gallery">
@@ -400,8 +440,8 @@
         </div>
     </section>
 
- <section class="product-card">
-           <header class="product-header">
+    <section class="product-card">
+        <header class="product-header">
             <h1>Molded Case Circuit Breaker</h1>
         </header>
         <div class="main-content">
@@ -409,12 +449,17 @@
                 <h2>Technical Specifications</h2>
                 <ul class="spec-list">
                     <li><span class="spec-key">Series</span> <span class="spec-value">Metasol Series</span></li>
-                    <li><span class="spec-key">Standard</span> <span class="spec-value">IEC 60947-2, GB/T14048.2</span></li>
+                    <li><span class="spec-key">Standard</span> <span class="spec-value">IEC 60947-2, GB/T14048.2</span>
+                    </li>
                     <li><span class="spec-key">Poles</span> <span class="spec-value">2P ,3P ,4</span></li>
-                    <li><span class="spec-key">Frame Size (AF)</span> <span class="spec-value">30AF, 50AF, 60AF, 100AF, 125AF, 250AF, 400AF, 600AF, 800AF, 1000AF, 1200AFF</span></li>
-                    <li><span class="spec-key">Type</span> <span class="spec-value">S type , N Type , H Type and L Type</span></li>
-                    <li><span class="spec-key">Rated Current (In)</span> <span class="spec-value">10A  to 1200A</span></li>
-                    <li><span class="spec-key">Breaking Capacity (Icu)</span> <span class="spec-value">10 ~ 85kA</span></li>
+                    <li><span class="spec-key">Frame Size (AF)</span> <span class="spec-value">30AF, 50AF, 60AF, 100AF,
+                            125AF, 250AF, 400AF, 600AF, 800AF, 1000AF, 1200AFF</span></li>
+                    <li><span class="spec-key">Type</span> <span class="spec-value">S type , N Type , H Type and L
+                            Type</span></li>
+                    <li><span class="spec-key">Rated Current (In)</span> <span class="spec-value">10A to 1200A</span>
+                    </li>
+                    <li><span class="spec-key">Breaking Capacity (Icu)</span> <span class="spec-value">10 ~ 85kA</span>
+                    </li>
                 </ul>
             </div>
             <div class="gallery">
@@ -428,9 +473,9 @@
             </div>
         </div>
     </section>
-<br>
+    <br>
     <section class="product-card">
-           <header class="product-header">
+        <header class="product-header">
             <h1>Air Circuit Breaker</h1>
         </header>
         <div class="main-content">
@@ -439,10 +484,14 @@
                 <ul class="spec-list">
                     <li><span class="spec-key">Series</span> <span class="spec-value">Metasol Series</span></li>
                     <li><span class="spec-key">Poles</span> <span class="spec-value">3P ,4P</span></li>
-                    <li><span class="spec-key">Frame Size (AF)</span> <span class="spec-value">1250AF ,1600AF ,2500AF,3200AF, 4000AF, 5000AF,6300AF</span></li>
-                    <li><span class="spec-key">Type</span> <span class="spec-value">Fixed Type , Draw out Type</span></li>
-                    <li><span class="spec-key">Rated Current (In)</span> <span class="spec-value">630A  to 6300A</span></li>
-                    <li><span class="spec-key">Breaking Capacity (Icu)</span> <span class="spec-value">65 ~ 100kA</span></li>
+                    <li><span class="spec-key">Frame Size (AF)</span> <span class="spec-value">1250AF ,1600AF
+                            ,2500AF,3200AF, 4000AF, 5000AF,6300AF</span></li>
+                    <li><span class="spec-key">Type</span> <span class="spec-value">Fixed Type , Draw out Type</span>
+                    </li>
+                    <li><span class="spec-key">Rated Current (In)</span> <span class="spec-value">630A to 6300A</span>
+                    </li>
+                    <li><span class="spec-key">Breaking Capacity (Icu)</span> <span class="spec-value">65 ~ 100kA</span>
+                    </li>
                 </ul>
             </div>
             <div class="gallery">
@@ -452,14 +501,14 @@
                     <img src="images/air2.png" alt="Miniature Circuit Breaker View 1" class="gallery-image">
                     <img src="images/air5.png" alt="Miniature Circuit Breaker View 1" class="gallery-image">
                     <img src="images/air4.png" alt="Miniature Circuit Breaker View 1" class="gallery-image">
-                    
+
                 </div>
             </div>
         </div>
     </section>
-<br>
+    <br>
     <section class="product-card">
-           <header class="product-header">
+        <header class="product-header">
             <h1>CRT Transformer</h1>
         </header>
         <div class="main-content">
@@ -469,26 +518,28 @@
                     <li><span class="spec-key">Rated Voltage</span> <span class="spec-value">6~33kV</span></li>
                     <li><span class="spec-key">Enclosure</span> <span class="spec-value">IP2X,IP 3X,IP 4XP</span></li>
                     <li><span class="spec-key">Rated Capacity</span> <span class="spec-value">Up to 3150 kVA</span></li>
-                    <li><span class="spec-key">Standard</span> <span class="spec-value">IEC 60076-11, KSC 4311,7 IEEC 57.12.01</span></li>
-                    <li><span class="spec-key">Insullation Class</span> <span class="spec-value">F type (155°𝐶) 𝑠𝑡𝑑 ,H type (180°𝐶) on request</span></li>
-                    
+                    <li><span class="spec-key">Standard</span> <span class="spec-value">IEC 60076-11, KSC 4311,7 IEEC
+                            57.12.01</span></li>
+                    <li><span class="spec-key">Insullation Class</span> <span class="spec-value">F type (155°𝐶) 𝑠𝑡𝑑
+                            ,H type (180°𝐶) on request</span></li>
+
                 </ul>
             </div>
             <div class="gallery">
                 <h2>Product Gallery</h2>
                 <div class="image-grid">
                     <img src="images/crt1.png" alt="Miniature Circuit Breaker View 1" class="gallery-image">
-                     <img src="images/crt2.png" alt="Miniature Circuit Breaker View 1" class="gallery-image">
-                      <img src="images/crt3.png" alt="Miniature Circuit Breaker View 1" class="gallery-image">
-                       <img src="images/crt4.png" alt="Miniature Circuit Breaker View 1" class="gallery-image">
-                    
+                    <img src="images/crt2.png" alt="Miniature Circuit Breaker View 1" class="gallery-image">
+                    <img src="images/crt3.png" alt="Miniature Circuit Breaker View 1" class="gallery-image">
+                    <img src="images/crt4.png" alt="Miniature Circuit Breaker View 1" class="gallery-image">
+
                 </div>
             </div>
         </div>
     </section>
     <br>
     <section class="product-card">
-           <header class="product-header">
+        <header class="product-header">
             <h1>Busduct</h1>
         </header>
         <div class="main-content">
@@ -497,34 +548,35 @@
                 <ul class="spec-list">
                     <li><span class="spec-key">Series</span> <span class="spec-value">I Series</span></li>
                     <li><span class="spec-key">Insulation Type</span> <span class="spec-value">Sandwich Type
-Iz-way  by  PET(Mylar)Class B/F optional
-If-way by Mica(1200°C)
-Ix-way by Epoxy (Class H)</span></li>
-                    <li><span class="spec-key">IP Rating</span> <span class="spec-value">IP 54 as std and 55,65 as optional</span></li>
+                            Iz-way by PET(Mylar)Class B/F optional
+                            If-way by Mica(1200°C)
+                            Ix-way by Epoxy (Class H)</span></li>
+                    <li><span class="spec-key">IP Rating</span> <span class="spec-value">IP 54 as std and 55,65 as
+                            optional</span></li>
                     <li><span class="spec-key">Aluminum Current </span> <span class="spec-value">630A ~6000A</span></li>
                     <li><span class="spec-key">Copper Current</span> <span class="spec-value">630 ~7500A</span></li>
-                    
+
                 </ul>
             </div>
             <div class="gallery">
                 <h2>Product Gallery</h2>
                 <div class="image-grid">
                     <img src="images/busduct1.png" alt="Miniature Circuit Breaker View 1" class="gallery-image">
-                      <img src="images/busduct2.png" alt="Miniature Circuit Breaker View 1" class="gallery-image">
-                        <img src="images/busduct3.png" alt="Miniature Circuit Breaker View 1" class="gallery-image">
-                        <img src="images/busduct4.png" alt="Miniature Circuit Breaker View 1" class="gallery-image">
+                    <img src="images/busduct2.png" alt="Miniature Circuit Breaker View 1" class="gallery-image">
+                    <img src="images/busduct3.png" alt="Miniature Circuit Breaker View 1" class="gallery-image">
+                    <img src="images/busduct4.png" alt="Miniature Circuit Breaker View 1" class="gallery-image">
 
                 </div>
             </div>
         </div>
     </section>
- <br>
+    <br>
     <section class="product-card">
-           <header class="product-header">
+        <header class="product-header">
             <h1>Other</h1>
         </header>
         <div class="main-content">
-            
+
             <div class="gallery">
                 <h2>Product Gallery</h2>
                 <div class="image-grid">
@@ -533,156 +585,182 @@ Ix-way by Epoxy (Class H)</span></li>
                     <img src="images/other3.png" alt="Miniature Circuit Breaker View 1" class="gallery-image">
                     <img src="images/other4.png" alt="Miniature Circuit Breaker View 1" class="gallery-image">
                     <img src="images/other5.png" alt="Miniature Circuit Breaker View 1" class="gallery-image">
-                    
+
                 </div>
             </div>
         </div>
     </section>
-<br>
-<footer class="ftco-footer">
-		<div class="container mb-5 pb-4">
-			<div class="row">
-				<div class="col-lg col-md-6">
-					<div class="ftco-footer-widget">
-						<h2 class="ftco-heading-2 d-flex align-items-center">About</h2>
-						<p>Born in June,2012 .Two persons founded ( Aung  & Tun ).One Head office & one factory in Yangon,Myanmar.
-</p>
-						<!-- <ul class="ftco-footer-social list-unstyled mt-4">
+    <br>
+    <footer class="ftco-footer">
+        <div class="container mb-5 pb-4">
+            <div class="row">
+                <div class="col-lg col-md-6">
+                    <div class="ftco-footer-widget">
+                        <h2 class="ftco-heading-2 d-flex align-items-center">About</h2>
+                        <p>Born in June,2012 .Two persons founded ( Aung & Tun ).One Head office & one factory in
+                            Yangon,Myanmar.
+                        </p>
+                        <!-- <ul class="ftco-footer-social list-unstyled mt-4">
 							<li><a href="#"><span class="fa fa-twitter"></span></a></li>
 							<li><a href="#"><span class="fa fa-facebook"></span></a></li>
 							<li><a href="#"><span class="fa fa-instagram"></span></a></li>
 						</ul> -->
-					</div>
-				</div>
+                    </div>
+                </div>
 
-				
 
-				<div class="col-lg col-md-6">
-					<div class="ftco-footer-widget">
-						<h2 class="ftco-heading-2">Services</h2>
-						<ul class="list-unstyled">
-							<li><a href="product1.html"><span class="fa fa-chevron-right mr-2"></span>Generator Solution</a></li>
-							<li><a href="product2.html"><span class="fa fa-chevron-right mr-2"></span>Electrical Products</a></li>
-							<li><a href="product3.html"><span class="fa fa-chevron-right mr-2"></span>LPI<sup>®</sup>Series</a></li>
-							<li><a href="product4.html"><span class="fa fa-chevron-right mr-2"></span>NIMBUS<sup>®</sup>Lightning Rob</a></li>
-						</ul>
-					</div>
-				</div>
 
                 <div class="col-lg col-md-6">
-					<div class="ftco-footer-widget">
-						<h2 class="ftco-heading-2">Photo Gallery</h2>
-						<ul class="list-unstyled">
-							<li><a href="project.html"><span class="fa fa-chevron-right mr-2"></span>LS Events Photos</a></li>
-							<li><a href="project1.html"><span class="fa fa-chevron-right mr-2"></span>Reference Photos 1</a></li>
-							<li><a href="project2.html"><span class="fa fa-chevron-right mr-2"></span>Reference Photos 2</a></li>
-							<li><a href="project3.html"><span class="fa fa-chevron-right mr-2"></span>Reference Photos 3</a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-lg col-md-6">
-					<div class="ftco-footer-widget">
-						<h2 class="ftco-heading-2">Have a Questions?</h2>
-						<div class="block-23 mb-3">
-							<ul>
-								<li><span class="fa fa-map-marker mr-3"></span><span class="text">L- 47,48,49, Thiri Yadanar Whole Sales Market Compound, North Okkalapa Township, Yangon.</span></li>
-								<li><a href="#"><span class="fa fa-phone mr-3"></span><span class="text">+959 73109605 ,<br>+959 73100362.</span></a></li>
-								<li><a href="#"><span class="fa fa-envelope mr-3"></span><span class="text">yezawaung.attem@gmail.com</span></a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="container-fluid bg-primary">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-6 aside-stretch py-3">
-						
-						<p class="mb-0"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-							Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved <i class="fa fa-heart" aria-hidden="true"></i> by <a href="" target="_blank">DPS.</a>
-							<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</footer>
-		
-		<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-			<div class="modal-dialog modal-dialog-centered" role="document">
-				<div class="modal-content">
-					<div class="modal-header">
-						<button type="button" class="close d-flex align-items-center justify-content-center" data-dismiss="modal" aria-label="Close">
-							<span aria-hidden="true" class="fa fa-close"></span>
-						</button>
-					</div>
-					<div class="modal-body p-4 p-md-5">
-						<form action="#" class="appointment-form ftco-animate">
-							<h3>Request Quote</h3>
-							<div class="">
-								<div class="form-group">
-									<input type="text" class="form-control" placeholder="First Name">
-								</div>
-								<div class="form-group">
-									<input type="text" class="form-control" placeholder="Last Name">
-								</div>
-								<div class="form-group">
-									<input type="text" class="form-control" placeholder="Phone">
-								</div>
-							</div>
-							<div class="">
-								<div class="form-group">
-									<div class="form-field">
-										<div class="select-wrap">
-											<div class="icon"><span class="fa fa-chevron-down"></span></div>
-											<select name="" id="" class="form-control">
-												<option value="">Select Your Services</option>
-												<option value="">Architecture</option>
-												<option value="">Renovation</option>
-												<option value="">Construction</option>
-												<option value="">Interior &amp; Exterior</option>
-												<option value="">Chemical Research</option>
-												<option value="">Petroleum &amp; Gas</option>
-												<option value="">Other Services</option>
-											</select>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="">
-								<div class="form-group">
-									<textarea name="" id="" cols="30" rows="4" class="form-control" placeholder="Message"></textarea>
-								</div>
-								<div class="form-group">
-									<input type="submit" value="Request A Quote" class="btn btn-primary py-3 px-4">
-								</div>
-							</div>
-						</form>
-					</div>
-				</div>
-			</div>
-		</div>
+                    <div class="ftco-footer-widget">
+                        <h2 class="ftco-heading-2">Services</h2>
+                        <ul class="list-unstyled">
+                            <li><a href="product1.html"><span class="fa fa-chevron-right mr-2"></span>Generator
+                                    Solution</a></li>
+                            <li><a href="product2.html"><span class="fa fa-chevron-right mr-2"></span>Electrical
+                                    Products</a></li>
+                            <li><a href="product3.html"><span
+                                        class="fa fa-chevron-right mr-2"></span>LPI<sup>®</sup>Series</a></li>
+                            <li><a href="product4.html"><span
+                                        class="fa fa-chevron-right mr-2"></span>NIMBUS<sup>®</sup>Lightning Rob</a></li>
+                        </ul>
+                    </div>
+                </div>
 
-		<!-- loader -->
-		<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+                <div class="col-lg col-md-6">
+                    <div class="ftco-footer-widget">
+                        <h2 class="ftco-heading-2">Photo Gallery</h2>
+                        <ul class="list-unstyled">
+                            <li><a href="project.html"><span class="fa fa-chevron-right mr-2"></span>LS Events
+                                    Photos</a></li>
+                            <li><a href="project1.html"><span class="fa fa-chevron-right mr-2"></span>Reference Photos
+                                    1</a></li>
+                            <li><a href="project2.html"><span class="fa fa-chevron-right mr-2"></span>Reference Photos
+                                    2</a></li>
+                            <li><a href="project3.html"><span class="fa fa-chevron-right mr-2"></span>Reference Photos
+                                    3</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg col-md-6">
+                    <div class="ftco-footer-widget">
+                        <h2 class="ftco-heading-2">Have a Questions?</h2>
+                        <div class="block-23 mb-3">
+                            <ul>
+                                <li><span class="fa fa-map-marker mr-3"></span><span class="text">L- 47,48,49, Thiri
+                                        Yadanar Whole Sales Market Compound, North Okkalapa Township, Yangon.</span>
+                                </li>
+                                <li><a href="#"><span class="fa fa-phone mr-3"></span><span class="text">+959 73109605
+                                            ,<br>+959 73100362.</span></a></li>
+                                <li><a href="#"><span class="fa fa-envelope mr-3"></span><span
+                                            class="text">yezawaung.attem@gmail.com</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid bg-primary">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 aside-stretch py-3">
 
-		<script src="js/jquery.min.js"></script>
-		<script src="js/jquery-migrate-3.0.1.min.js"></script>
-		<script src="js/popper.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
-		<script src="js/jquery.easing.1.3.js"></script>
-		<script src="js/jquery.waypoints.min.js"></script>
-		<script src="js/jquery.stellar.min.js"></script>
-		<script src="js/owl.carousel.min.js"></script>
-		<script src="js/jquery.magnific-popup.min.js"></script>
-		<script src="js/jquery.animateNumber.min.js"></script>
-		<script src="js/bootstrap-datepicker.js"></script>
-		<script src="js/jquery.timepicker.min.js"></script>
-		<script src="js/scrollax.min.js"></script>
-		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
-		<script src="js/google-map.js"></script>
-		
-		<script src="js/main.js"></script>
-		
-	</body>
-	</html>
+                        <p class="mb-0">
+                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                            Copyright &copy;<script>
+                                document.write(new Date().getFullYear());
+                            </script> All rights reserved <i class="fa fa-heart" aria-hidden="true"></i> by <a href=""
+                                target="_blank">DPS.</a>
+                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close d-flex align-items-center justify-content-center"
+                        data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true" class="fa fa-close"></span>
+                    </button>
+                </div>
+                <div class="modal-body p-4 p-md-5">
+                    <form action="#" class="appointment-form ftco-animate">
+                        <h3>Request Quote</h3>
+                        <div class="">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="First Name">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Last Name">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Phone">
+                            </div>
+                        </div>
+                        <div class="">
+                            <div class="form-group">
+                                <div class="form-field">
+                                    <div class="select-wrap">
+                                        <div class="icon"><span class="fa fa-chevron-down"></span></div>
+                                        <select name="" id="" class="form-control">
+                                            <option value="">Select Your Services</option>
+                                            <option value="">Architecture</option>
+                                            <option value="">Renovation</option>
+                                            <option value="">Construction</option>
+                                            <option value="">Interior &amp; Exterior</option>
+                                            <option value="">Chemical Research</option>
+                                            <option value="">Petroleum &amp; Gas</option>
+                                            <option value="">Other Services</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="">
+                            <div class="form-group">
+                                <textarea name="" id="" cols="30" rows="4" class="form-control"
+                                    placeholder="Message"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <input type="submit" value="Request A Quote" class="btn btn-primary py-3 px-4">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- loader -->
+    <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
+            <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+            <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+                stroke="#F96D00" /></svg></div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery.animateNumber.min.js"></script>
+    <script src="js/bootstrap-datepicker.js"></script>
+    <script src="js/jquery.timepicker.min.js"></script>
+    <script src="js/scrollax.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false">
+    </script>
+    <script src="js/google-map.js"></script>
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

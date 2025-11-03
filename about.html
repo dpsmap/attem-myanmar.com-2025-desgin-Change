@@ -1,331 +1,354 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<title>AUNG THET TUN (ELECTRICAL & MACHINERY TRADING CO.,LTD)</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	
+
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
 
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
 	<link rel="stylesheet" href="css/animate.css">
-	
+
 	<link rel="stylesheet" href="css/owl.carousel.min.css">
 	<link rel="stylesheet" href="css/owl.theme.default.min.css">
 	<link rel="stylesheet" href="css/magnific-popup.css">
 
 	<link rel="stylesheet" href="css/bootstrap-datepicker.css">
 	<link rel="stylesheet" href="css/jquery.timepicker.css">
-	
+
 	<link rel="stylesheet" href="css/flaticon.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link favicon href="images/favicon2.png" type="image/png" rel="icon">
 	<style>
 		/* Create two equal columns that floats next to each other */
-.column {
-  float: left;
-  width: 50%;
-  padding: 10px;
-  height: 300px; /* Should be removed. Only for demonstration */
-}
+		.column {
+			float: left;
+			width: 50%;
+			padding: 10px;
+			height: 300px;
+			/* Should be removed. Only for demonstration */
+		}
 
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-.slideshow-container {
-  position: relative;
-  border-radius: 16px;
-  overflow: hidden;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-}
+		/* Clear floats after the columns */
+		.row:after {
+			content: "";
+			display: table;
+			clear: both;
+		}
 
-.mySlides {
-  display: none;
-}
+		.slideshow-container {
+			position: relative;
+			border-radius: 16px;
+			overflow: hidden;
+			box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+		}
 
-.mySlides img {
-  width: 100%;
-  border-radius: 16px;
-}
+		.mySlides {
+			display: none;
+		}
 
-.dot {
-  height: 12px;
-  width: 12px;
-  margin: 0 5px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: 0.3s;
-  cursor: pointer;
-}
-.active, .dot:hover {
-  background-color: #007bff;
-}
+		.mySlides img {
+			width: 100%;
+			border-radius: 16px;
+		}
 
-.fade {
-  opacity: 1;
-  transition: none;
-}
+		.dot {
+			height: 12px;
+			width: 12px;
+			margin: 0 5px;
+			background-color: #bbb;
+			border-radius: 50%;
+			display: inline-block;
+			transition: 0.3s;
+			cursor: pointer;
+		}
 
-@media (max-width: 768px) {
-  .slideshow-container {
-    margin-bottom: 2rem;
-  }
-}
-/* ====== Organization Chart Card ====== */
-.org-card {
-  background: linear-gradient(135deg, #4e73df, #1e3a8a);
-  border-radius: 16px;
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
-  padding: 15px;
-  max-width: 800px;
-  width: 100%;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  cursor: pointer;
-}
+		.active,
+		.dot:hover {
+			background-color: #007bff;
+		}
 
-.org-card:hover {
-  transform: scale(1.03);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-}
+		.fade {
+			opacity: 1;
+			transition: none;
+		}
 
-.org-img {
-  width: 100%;
-  height: auto;
-  border-radius: 12px;
-  display: block;
-}
+		@media (max-width: 768px) {
+			.slideshow-container {
+				margin-bottom: 2rem;
+			}
+		}
 
-/* ====== Lightbox Styles ====== */
-.lightbox {
-  display: none;
-  position: fixed;
-  z-index: 1000;
-  padding-top: 60px;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.95);
-}
+		/* ====== Organization Chart Card ====== */
+		.org-card {
+			background: linear-gradient(135deg, #4e73df, #1e3a8a);
+			border-radius: 16px;
+			box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+			padding: 15px;
+			max-width: 800px;
+			width: 100%;
+			transition: transform 0.3s ease, box-shadow 0.3s ease;
+			cursor: pointer;
+		}
 
-.lightbox-content {
-  margin: auto;
-  display: block;
-  max-width: 90%;
-  max-height: 85vh;
-  border-radius: 8px;
-  animation: fadeIn 0.3s ease-in-out;
-}
+		.org-card:hover {
+			transform: scale(1.03);
+			box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+		}
 
-.close {
-  position: absolute;
-  top: 25px;
-  right: 40px;
-  color: white;
-  font-size: 40px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: 0.3s;
-}
+		.org-img {
+			width: 100%;
+			height: auto;
+			border-radius: 12px;
+			display: block;
+		}
 
-.close:hover {
-  color: #aaa;
-}
+		/* ====== Lightbox Styles ====== */
+		.lightbox {
+			display: none;
+			position: fixed;
+			z-index: 1000;
+			padding-top: 60px;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			background: rgba(0, 0, 0, 0.95);
+		}
 
-@keyframes fadeIn {
-  from {opacity: 0;}
-  to {opacity: 1;}
-}
+		.lightbox-content {
+			margin: auto;
+			display: block;
+			max-width: 90%;
+			max-height: 85vh;
+			border-radius: 8px;
+			animation: fadeIn 0.3s ease-in-out;
+		}
 
+		.close {
+			position: absolute;
+			top: 25px;
+			right: 40px;
+			color: white;
+			font-size: 40px;
+			font-weight: bold;
+			cursor: pointer;
+			transition: 0.3s;
+		}
 
-@media (max-width: 768px) {
-  .org-card {
-    padding: 10px;
-  }
+		.close:hover {
+			color: #aaa;
+		}
 
-  .close {
-    font-size: 32px;
-    right: 25px;
-  }
-}
+		@keyframes fadeIn {
+			from {
+				opacity: 0;
+			}
 
-.gallery-section {
-  padding: 50px 20px;
-  text-align: center;
-  background: #f9fafb;
-}
-
-.gallery-title {
-  font-size: 1.8rem;
-  font-weight: bold;
-  color: #333;
-  margin-bottom: 30px;
-}
-
-.gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 20px;
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-.gallery-item {
-  overflow: hidden;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.gallery-item:hover {
-  transform: scale(1.03);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
-}
-
-.gallery-item img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  cursor: pointer;
-}
+			to {
+				opacity: 1;
+			}
+		}
 
 
-.lightbox {
-  display: none;
-  position: fixed;
-  z-index: 999;
-  padding-top: 60px;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgba(0, 0, 0, 0.9);
-}
+		@media (max-width: 768px) {
+			.org-card {
+				padding: 10px;
+			}
 
-.lightbox-content {
-  margin: auto;
-  display: block;
-  max-width: 90%;
-  max-height: 80vh;
-  border-radius: 8px;
-}
+			.close {
+				font-size: 32px;
+				right: 25px;
+			}
+		}
 
-.close {
-  position: absolute;
-  top: 25px;
-  right: 35px;
-  color: white;
-  font-size: 35px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: 0.3s;
-}
+		.gallery-section {
+			padding: 50px 20px;
+			text-align: center;
+			background: #f9fafb;
+		}
 
-.close:hover {
-  color: #ccc;
-}
+		.gallery-title {
+			font-size: 1.8rem;
+			font-weight: bold;
+			color: #333;
+			margin-bottom: 30px;
+		}
 
-.org-card {
-  background: linear-gradient(135deg, #4e73df, #1e3a8a);
-  border-radius: 16px;
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
-  padding: 15px;
-  max-width: 800px;
-  width: 100%;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  cursor: pointer;
-}
+		.gallery-grid {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+			gap: 20px;
+			max-width: 1000px;
+			margin: 0 auto;
+		}
 
-.org-card:hover {
-  transform: scale(1.03);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-}
+		.gallery-item {
+			overflow: hidden;
+			border-radius: 12px;
+			box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+			transition: transform 0.3s ease, box-shadow 0.3s ease;
+		}
 
-.org-img {
-  width: 100%;
-  height: auto;
-  border-radius: 12px;
-  display: block;
-}
-.lightbox1 {
-  display: none;
-  position: fixed;
-  z-index: 1000;
-  padding-top: 60px;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.95);
-}
+		.gallery-item:hover {
+			transform: scale(1.03);
+			box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+		}
 
-.lightbox-content1 {
-  margin: auto;
-  display: block;
-  max-width: 90%;
-  max-height: 85vh;
-  border-radius: 8px;
-  animation: fadeIn 0.3s ease-in-out;
-}
+		.gallery-item img {
+			width: 100%;
+			height: 200px;
+			object-fit: cover;
+			cursor: pointer;
+		}
 
-.close1 {
-  position: absolute;
-  top: 25px;
-  right: 40px;
-  color: white;
-  font-size: 40px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: 0.3s;
-}
 
-.close1:hover {
-  color: #aaa;
-}
+		.lightbox {
+			display: none;
+			position: fixed;
+			z-index: 999;
+			padding-top: 60px;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			overflow: auto;
+			background-color: rgba(0, 0, 0, 0.9);
+		}
 
-@keyframes fadeIn {
-  from {opacity: 0;}
-  to {opacity: 1;}
-}
+		.lightbox-content {
+			margin: auto;
+			display: block;
+			max-width: 90%;
+			max-height: 80vh;
+			border-radius: 8px;
+		}
 
-/* ====== Responsive ====== */
-@media (max-width: 768px) {
-  .org-card {
-    padding: 10px;
-  }
+		.close {
+			position: absolute;
+			top: 25px;
+			right: 35px;
+			color: white;
+			font-size: 35px;
+			font-weight: bold;
+			cursor: pointer;
+			transition: 0.3s;
+		}
 
-  .close1 {
-    font-size: 32px;
-    right: 25px;
-  }
-}
+		.close:hover {
+			color: #ccc;
+		}
+
+		.org-card {
+			background: linear-gradient(135deg, #4e73df, #1e3a8a);
+			border-radius: 16px;
+			box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+			padding: 15px;
+			max-width: 800px;
+			width: 100%;
+			transition: transform 0.3s ease, box-shadow 0.3s ease;
+			cursor: pointer;
+		}
+
+		.org-card:hover {
+			transform: scale(1.03);
+			box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+		}
+
+		.org-img {
+			width: 100%;
+			height: auto;
+			border-radius: 12px;
+			display: block;
+		}
+
+		.lightbox1 {
+			display: none;
+			position: fixed;
+			z-index: 1000;
+			padding-top: 60px;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			background: rgba(0, 0, 0, 0.95);
+		}
+
+		.lightbox-content1 {
+			margin: auto;
+			display: block;
+			max-width: 90%;
+			max-height: 85vh;
+			border-radius: 8px;
+			animation: fadeIn 0.3s ease-in-out;
+		}
+
+		.close1 {
+			position: absolute;
+			top: 25px;
+			right: 40px;
+			color: white;
+			font-size: 40px;
+			font-weight: bold;
+			cursor: pointer;
+			transition: 0.3s;
+		}
+
+		.close1:hover {
+			color: #aaa;
+		}
+
+		@keyframes fadeIn {
+			from {
+				opacity: 0;
+			}
+
+			to {
+				opacity: 1;
+			}
+		}
+
+		/* ====== Responsive ====== */
+		@media (max-width: 768px) {
+			.org-card {
+				padding: 10px;
+			}
+
+			.close1 {
+				font-size: 32px;
+				right: 25px;
+			}
+		}
 	</style>
 </head>
+
 <body>
 	<div class="py-1 top">
 		<div class="container">
 			<div class="row">
 				<div class="col-sm text-center text-md-left mb-md-0 mb-2 pr-md-4 d-flex topper align-items-center">
-					<p class="mb-0 w-100">
+					<p class="mb-0 w-100 ">
 						<span class="fa fa-envelope">
-						yezawaung.attem@gmail.com</span>
+							<a href="mailto:yezawaung.attem@gmail.com">yezawaung.attem@gmail.com</a></span>
 					</p>
 				</div>
 				<div class="col-sm justify-content-center d-flex mb-md-0 mb-2">
-					
+
 				</div>
-				<div class="social-media col-sm-12 col-md-6 col-lg-7 d-flex topper align-items-center text-lg-right justify-content-end">
+				<div
+					class="social-media col-sm-12 col-md-6 col-lg-7 d-flex topper align-items-center text-lg-right justify-content-end">
 					<p class="mb-0 d-flex">
-						<a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-facebook-official"><i class="sr-only">Facebook</i></span></a>
-							<a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-tumblr-square"><i class="sr-only">Twitter</i></span></a>
-							<a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-youtube"><i class="sr-only">Instagram</i></span></a>
-							<a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-telegram"><i class="sr-only">Telegram</i></span></a>
+						<a href="#" class="d-flex align-items-center justify-content-center"><span
+								class="fa fa-facebook-official"><i class="sr-only">Facebook</i></span></a>
+						<a href="#" class="d-flex align-items-center justify-content-center"><span
+								class="fa fa-tumblr-square"><i class="sr-only">Twitter</i></span></a>
+						<a href="#" class="d-flex align-items-center justify-content-center"><span
+								class="fa fa-youtube"><i class="sr-only">Instagram</i></span></a>
+						<a href="#" class="d-flex align-items-center justify-content-center"><span
+								class="fa fa-telegram"><i class="sr-only">Telegram</i></span></a>
 					</p>
 				</div>
 			</div>
@@ -349,11 +372,13 @@
 					</div>
 				</div>
 				<div class="col-md-4 d-flex topper mb-md-0 align-items-center">
-					<div class="icon d-flex justify-content-center align-items-center"><span class="fa fa-building"></span>
+					<div class="icon d-flex justify-content-center align-items-center"><span
+							class="fa fa-building"></span>
 					</div>
 					<div class="text pl-3 pl-md-3">
 						<p class="hr"><span>Our Factory</span></p>
-						<p class="con">No.144/82, Tine Tar Min Gyi Street,No.2 Industrial Zone, East Dagon Township,Yangon,Myanmar.</p>
+						<p class="con">No.144/82, Tine Tar Min Gyi Street,No.2 Industrial Zone, East Dagon
+							Township,Yangon,Myanmar.</p>
 					</div>
 				</div>
 			</div>
@@ -361,7 +386,8 @@
 	</div>
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark ftco-navbar-light" id="ftco-navbar">
 		<div class="container d-flex align-items-center">
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
+				aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="fa fa-bars"></span> Menu
 			</button>
 			<div class="collapse navbar-collapse" id="ftco-nav">
@@ -371,125 +397,125 @@
 					<li class="nav-item"><a href="services.html" class="nav-link">Products</a></li>
 					<li class="nav-item"><a href="project.html" class="nav-link">Photo Gallery</a></li>
 					<li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
-					<li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+					<li class="nav-item"><a href="blog.php" class="nav-link">Blog</a></li>
 				</ul>
-				
+
 			</div>
 		</div>
 	</nav>
 	<!-- END nav -->
-<section class="hero-wrap hero-wrap-2" style="background-image: url('images/005.png');" data-stellar-background-ratio="0.5">
+	<section class="hero-wrap hero-wrap-2" style="background-image: url('images/005.png');"
+		data-stellar-background-ratio="0.5">
 		<div class="overlay"></div>
 		<div class="container">
 			<div class="row no-gutters slider-text align-items-end justify-content-start">
 				<div class="col-md-9 ftco-animate pb-5">
-					<p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home <i class="fa fa-chevron-right"></i></a></span> <span>Profile <i class="fa fa-chevron-right"></i></span></p>
+					<p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home <i
+									class="fa fa-chevron-right"></i></a></span> <span>Profile <i
+								class="fa fa-chevron-right"></i></span></p>
 					<h1 class="mb-3 bread">Profile</h1>
 				</div>
 			</div>
 		</div>
 	</section>
 	<section class="ftco-section py-5">
-  <div class="container">
-    <div class="row align-items-center">
-      
-      <!-- Left Column: Slideshow -->
-      <div class="col-lg-6 mb-4 mb-lg-0">
-        <div class="slideshow-container">
+		<div class="container">
+			<div class="row align-items-center">
 
-  <div class="mySlides">
-    <img src="images/008.png" alt="Slide 1" style="width:90%">
-  </div>
+				<!-- Left Column: Slideshow -->
+				<div class="col-lg-6 mb-4 mb-lg-0">
+					<div class="slideshow-container">
 
-  <div class="mySlides">
-    <img src="images/009.JPG" alt="Slide 2" style="width:90%">
-  </div>
+						<div class="mySlides">
+							<img src="images/008.png" alt="Slide 1" style="width:90%">
+						</div>
 
-  <div class="mySlides">
-    <img src="images/010.JPG" alt="Slide 3" style="width:90%">
-  </div>
-  <div class="mySlides">
-	<img src="images/011.JPG" alt="Slide 4" style="width:90%">
-  </div>
-  <div class="mySlides">
-	<img src="images/012.JPG" alt="Slide 5" style="width:90%">
-  </div>
-</div>
-<div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span>
-  <span class="dot" onclick="currentSlide(2)"></span>
-  <span class="dot" onclick="currentSlide(3)"></span>
-  <span class="dot" onclick="currentSlide(4)"></span>
-  <span class="dot" onclick="currentSlide(5)"></span>
-</div>  
-</div>
-      <div class="col-lg-6">
-        <div class="heading-section ftco-animate">
-          <span class="subheading text-primary">What is  ATTEM?</span>
-          <h3 class="mb-4 font-weight-bold">AUNG THET TUN ELECTRICAL & MACHINERY TRADING CO.,LTD.</h3>
-          
-          <div class="d-flex about mb-3">
-            <div class="mr-3 text-primary">
-            </div>
-            <h5>First Project start in July , 2012 .
-Well developed in 2013. Enter to Machinery Business in 2014. Over 50 employed .</h5>
-          </div>
-          <p>
-            Born in June,2012. Two persons founded ( Aung  & Tun ). One Head office & one factory in Yangon,Myanmar.
-Showroom in Yangon Branch in Nay Pyi Taw. Branch in Mandalay.
-          </p>
-        </div>
-      </div>
+						<div class="mySlides">
+							<img src="images/009.JPG" alt="Slide 2" style="width:90%">
+						</div>
 
-    </div>
-  </div>
-</section>
-<section class="gallery-section">
-  <h2 class="gallery-title">Our Certifications</h2>
+						<div class="mySlides">
+							<img src="images/010.JPG" alt="Slide 3" style="width:90%">
+						</div>
+						<div class="mySlides">
+							<img src="images/011.JPG" alt="Slide 4" style="width:90%">
+						</div>
+						<div class="mySlides">
+							<img src="images/012.JPG" alt="Slide 5" style="width:90%">
+						</div>
+					</div>
+					<div style="text-align:center">
+						<span class="dot" onclick="currentSlide(1)"></span>
+						<span class="dot" onclick="currentSlide(2)"></span>
+						<span class="dot" onclick="currentSlide(3)"></span>
+						<span class="dot" onclick="currentSlide(4)"></span>
+						<span class="dot" onclick="currentSlide(5)"></span>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="heading-section ftco-animate">
+						<span class="subheading text-primary">What is ATTEM?</span>
+						<h3 class="mb-4 font-weight-bold">AUNG THET TUN ELECTRICAL & MACHINERY TRADING CO.,LTD.</h3>
 
-  <div class="gallery-grid">
-    <div class="gallery-item">
-      <img src="images/cer1.png" alt="Certification 1" onclick="openLightbox(this)">
-    </div>
-    <div class="gallery-item">
-      <img src="images/cer2.png" alt="Certification 2" onclick="openLightbox(this)">
-    </div>
-    <div class="gallery-item">
-      <img src="images/cer3.png" alt="Certification 3" onclick="openLightbox(this)">
-    </div>
-    <div class="gallery-item">
-      <img src="images/cer4.png" alt="Certification 4" onclick="openLightbox(this)">
-    </div>
-  </div>
-  <div id="lightbox" class="lightbox" onclick="closeLightbox()">
-    <span class="close">&times;</span>
-    <img class="lightbox-content" id="lightbox-img">
-  </div>
-</section>
+						<div class="d-flex about mb-3">
+							<div class="mr-3 text-primary">
+							</div>
+							<h5>First Project start in July , 2012 .
+								Well developed in 2013. Enter to Machinery Business in 2014. Over 50 employed .</h5>
+						</div>
+						<p>
+							Born in June,2012. Two persons founded ( Aung & Tun ). One Head office & one factory in
+							Yangon,Myanmar.
+							Showroom in Yangon Branch in Nay Pyi Taw. Branch in Mandalay.
+						</p>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+	<section class="gallery-section">
+		<h2 class="gallery-title">Our Certifications</h2>
+
+		<div class="gallery-grid">
+			<div class="gallery-item">
+				<img src="images/cer1.png" alt="Certification 1" onclick="openLightbox(this)">
+			</div>
+			<div class="gallery-item">
+				<img src="images/cer2.png" alt="Certification 2" onclick="openLightbox(this)">
+			</div>
+			<div class="gallery-item">
+				<img src="images/cer3.png" alt="Certification 3" onclick="openLightbox(this)">
+			</div>
+			<div class="gallery-item">
+				<img src="images/cer4.png" alt="Certification 4" onclick="openLightbox(this)">
+			</div>
+		</div>
+		<div id="lightbox" class="lightbox" onclick="closeLightbox()">
+			<span class="close">&times;</span>
+			<img class="lightbox-content" id="lightbox-img">
+		</div>
+	</section>
 
 	<section class="ftco-section" style="background: #0a192f; padding: 60px 20px;">
-  <div class="row justify-content-center">
-    <div class="col-lg-10 text-center py-5">
-      <h3 class="text-white mb-5" style="font-size: 2rem; font-weight: bold;">Organization Chart</h3>
+		<div class="row justify-content-center">
+			<div class="col-lg-10 text-center py-5">
+				<h3 class="text-white mb-5" style="font-size: 2rem; font-weight: bold;">Organization Chart</h3>
 
-      <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 20px;">
-        <div class="org-card" onclick="openLightbox1(this)">
-          <img 
-            src="images/org_pdf.png" 
-            alt="Organization Chart" 
-            class="org-img"
-          >
-        </div>
-      </div>
-    </div>
-  </div>
+				<div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 20px;">
+					<div class="org-card" onclick="openLightbox1(this)">
+						<img src="images/org_pdf.png" alt="Organization Chart" class="org-img">
+					</div>
+				</div>
+			</div>
+		</div>
 
 
-  <div id="lightbox1" class="lightbox1" onclick="closeLightbox1()">
-    <span class="close1">&times;</span>
-    <img class="lightbox-content1" id="lightbox-img1">
-  </div>
-</section>
+		<div id="lightbox1" class="lightbox1" onclick="closeLightbox1()">
+			<span class="close1">&times;</span>
+			<img class="lightbox-content1" id="lightbox-img1">
+		</div>
+	</section>
 	<section class="ftco-section">
 		<div class="container">
 			<div class="row justify-content-center mb-5 pb-3">
@@ -512,16 +538,17 @@ Showroom in Yangon Branch in Nay Pyi Taw. Branch in Mandalay.
 								<!-- back content -->
 								<blockquote>
 									<p>&ldquo;
-Got AGTI (EP) Diploma from Government Technical Institute.
-Got B.Sc (Physics) degree from Yangon University.
-Got Diploma in International Relation from Yangon University.
-Experience over 10 years in Electrical field. &rdquo;</p>
+										Got AGTI (EP) Diploma from Government Technical Institute.
+										Got B.Sc (Physics) degree from Yangon University.
+										Got Diploma in International Relation from Yangon University.
+										Experience over 10 years in Electrical field. &rdquo;</p>
 								</blockquote>
 								<div class="author d-flex">
 									<div class="image align-self-center">
 										<img src="images/md.png" alt="">
 									</div>
-									<div class="name align-self-center ml-3">Ye Zaw Aung<span class="position">Managing Director</span></div>
+									<div class="name align-self-center ml-3">Ye Zaw Aung<span class="position">Managing
+											Director</span></div>
 								</div>
 							</div>
 						</div>
@@ -540,15 +567,16 @@ Experience over 10 years in Electrical field. &rdquo;</p>
 								<!-- back content -->
 								<blockquote>
 									<p>&ldquo;Got I.T.E (EP) Diploma from Singapore.
-Experience over 11 years in National Industrial Gas (Singapore)
-Experience over 3 years in National Industrial Gas (Indonesia)
-Experience over 2 years in Thomas Engineering Automation (Singapore) &rdquo;</p>
+										Experience over 11 years in National Industrial Gas (Singapore)
+										Experience over 3 years in National Industrial Gas (Indonesia)
+										Experience over 2 years in Thomas Engineering Automation (Singapore) &rdquo;</p>
 								</blockquote>
 								<div class="author d-flex">
 									<div class="image align-self-center">
 										<img src="images/dpm.png" alt="">
 									</div>
-									<div class="name align-self-center ml-3">Khin Mg Tun<span class="position">Director Project Management</span></div>
+									<div class="name align-self-center ml-3">Khin Mg Tun<span class="position">Director
+											Project Management</span></div>
 								</div>
 							</div>
 						</div>
@@ -560,51 +588,54 @@ Experience over 2 years in Thomas Engineering Automation (Singapore) &rdquo;</p>
 
 	<section class="ftco-section ftco-no-pt ftco-no-pb testimony-section img">
 		<div class="overlay">
-		<div class="container">
-			<div class="row ftco-animate justify-content-center">
-				<div class="col-md-6 p-4 pl-md-0 py-md-5 pr-md-5 aside-stretch d-flex align-items-center">
-					<div class="heading-section heading-section-white">
-						<span class="subheading" style="color:#fff;">Read Testimonials</span>
-						<h2 class="mb-4" style="font-size: 50px;">Both are over 25 years experience in Electrical Fields.</h2>
+			<div class="container">
+				<div class="row ftco-animate justify-content-center">
+					<div class="col-md-6 p-4 pl-md-0 py-md-5 pr-md-5 aside-stretch d-flex align-items-center">
+						<div class="heading-section heading-section-white">
+							<span class="subheading" style="color:#fff;">Read Testimonials</span>
+							<h2 class="mb-4" style="font-size: 50px;">Both are over 25 years experience in Electrical
+								Fields.</h2>
+						</div>
+					</div>
+					<div class="col-md-6 pl-md-5 py-4 py-md-5 aside-stretch-right">
+						<div class="carousel-testimony owl-carousel ftco-owl">
+							<div class="item">
+								<div class="testimony-wrap py-4 pb-5 d-flex justify-content-between align-items-end">
+									<div class="user-img" style="background-image: url(images/md.png)">
+										<span class="quote d-flex align-items-center justify-content-center">
+											<i class="fa fa-quote-left"></i>
+										</span>
+									</div>
+									<div class="text">
+										<p class="mb-4">We are committed to providing excellent Possible only because of
+											our clients who have
+											Development services to our clients and hence, placed their trust on us and
+											our excellent team
+											Put our all out effort to achieve the best quality.</p>
+										<p class="name">Ye Zaw Aung</p>
+										<span class="position">Managing Director</span>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="testimony-wrap py-4 pb-5 d-flex justify-content-between align-items-end">
+									<div class="user-img" style="background-image: url(images/dpm.png)">
+										<span class="quote d-flex align-items-center justify-content-center">
+											<i class="fa fa-quote-left"></i>
+										</span>
+									</div>
+									<div class="text">
+										<p class="mb-4">Possible only because of our clients who have
+											placed their trust on us and our excellent team of professionals.</p>
+										<p class="name">Khin Mg Tun</p>
+										<span class="position">Director Project Management</span>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
-				<div class="col-md-6 pl-md-5 py-4 py-md-5 aside-stretch-right">
-					<div class="carousel-testimony owl-carousel ftco-owl">
-						<div class="item">
-							<div class="testimony-wrap py-4 pb-5 d-flex justify-content-between align-items-end">
-								<div class="user-img" style="background-image: url(images/md.png)">
-									<span class="quote d-flex align-items-center justify-content-center">
-										<i class="fa fa-quote-left"></i>
-									</span>
-								</div>
-								<div class="text">
-									<p class="mb-4">We are committed to providing excellent			Possible only because of our clients who have 
-Development services to our clients and hence,			placed their trust on us and our excellent team
-Put our all out effort to achieve the best quality.</p>
-									<p class="name">Ye Zaw Aung</p>
-									<span class="position">Managing Director</span>
-								</div>
-							</div>
-						</div>
-						<div class="item">
-							<div class="testimony-wrap py-4 pb-5 d-flex justify-content-between align-items-end">
-								<div class="user-img" style="background-image: url(images/dpm.png)">
-									<span class="quote d-flex align-items-center justify-content-center">
-										<i class="fa fa-quote-left"></i>
-									</span>
-								</div>
-								<div class="text">
-									<p class="mb-4">Possible only because of our clients who have 
-placed their trust on us and our excellent team of professionals.</p>
-									<p class="name">Khin Mg Tun</p>
-									<span class="position">Director Project Management</span>
-								</div>
-							</div>
-						</div>
-				</div>
 			</div>
-		</div>
-		</div>
 	</section>
 
 	<footer class="ftco-footer">
@@ -613,8 +644,9 @@ placed their trust on us and our excellent team of professionals.</p>
 				<div class="col-lg col-md-6">
 					<div class="ftco-footer-widget">
 						<h2 class="ftco-heading-2 d-flex align-items-center">About</h2>
-						<p>Born in June,2012 .Two persons founded ( Aung  & Tun ).One Head office & one factory in Yangon,Myanmar.
-.</p>
+						<p>Born in June,2012 .Two persons founded ( Aung & Tun ).One Head office & one factory in
+							Yangon,Myanmar.
+							.</p>
 						<!-- <ul class="ftco-footer-social list-unstyled mt-4">
 							<li><a href="#"><span class="fa fa-twitter"></span></a></li>
 							<li><a href="#"><span class="fa fa-facebook"></span></a></li>
@@ -623,16 +655,20 @@ placed their trust on us and our excellent team of professionals.</p>
 					</div>
 				</div>
 
-				
+
 
 				<div class="col-lg col-md-6">
 					<div class="ftco-footer-widget">
 						<h2 class="ftco-heading-2">Services</h2>
 						<ul class="list-unstyled">
-							<li><a href="product1.html"><span class="fa fa-chevron-right mr-2"></span>Generator Solution</a></li>
-							<li><a href="product2.html"><span class="fa fa-chevron-right mr-2"></span>Electrical Products</a></li>
-							<li><a href="product3.html"><span class="fa fa-chevron-right mr-2"></span>LPI<sup>®</sup>Series</a></li>
-							<li><a href="product4.html"><span class="fa fa-chevron-right mr-2"></span>NIMBUS<sup>®</sup>Lightning Rob</a></li>
+							<li><a href="product1.html"><span class="fa fa-chevron-right mr-2"></span>Generator
+									Solution</a></li>
+							<li><a href="product2.html"><span class="fa fa-chevron-right mr-2"></span>Electrical
+									Products</a></li>
+							<li><a href="product3.html"><span
+										class="fa fa-chevron-right mr-2"></span>LPI<sup>®</sup>Series</a></li>
+							<li><a href="product4.html"><span
+										class="fa fa-chevron-right mr-2"></span>NIMBUS<sup>®</sup>Lightning Rob</a></li>
 						</ul>
 					</div>
 				</div>
@@ -641,10 +677,14 @@ placed their trust on us and our excellent team of professionals.</p>
 					<div class="ftco-footer-widget">
 						<h2 class="ftco-heading-2">Photo Gallery</h2>
 						<ul class="list-unstyled">
-							<li><a href="project.html"><span class="fa fa-chevron-right mr-2"></span>LS Event Photos</a></li>
-							<li><a href="project1.html"><span class="fa fa-chevron-right mr-2"></span>Reference Photos 1</a></li>
-							<li><a href="project2.html"><span class="fa fa-chevron-right mr-2"></span>Reference Photos 2</a></li>
-							<li><a href="project3.html"><span class="fa fa-chevron-right mr-2"></span>Reference Photos 3</a></li>
+							<li><a href="project.html"><span class="fa fa-chevron-right mr-2"></span>LS Event Photos</a>
+							</li>
+							<li><a href="project1.html"><span class="fa fa-chevron-right mr-2"></span>Reference Photos
+									1</a></li>
+							<li><a href="project2.html"><span class="fa fa-chevron-right mr-2"></span>Reference Photos
+									2</a></li>
+							<li><a href="project3.html"><span class="fa fa-chevron-right mr-2"></span>Reference Photos
+									3</a></li>
 						</ul>
 					</div>
 				</div>
@@ -653,9 +693,13 @@ placed their trust on us and our excellent team of professionals.</p>
 						<h2 class="ftco-heading-2">Have a Questions?</h2>
 						<div class="block-23 mb-3">
 							<ul>
-								<li><span class="fa fa-map-marker mr-3"></span><span class="text">L- 47,48,49, Thiri Yadanar Whole Sales Market Compound, North Okkalapa Township, Yangon.</span></li>
-								<li><a href="#"><span class="fa fa-phone mr-3"></span><span class="text">+959 73109605 ,<br>+959 73100362.</span></a></li>
-								<li><a href="#"><span class="fa fa-envelope mr-3"></span><span class="text"> yezawaung.attem@gmail.com</span></a></li>
+								<li><span class="fa fa-map-marker mr-3"></span><span class="text">L- 47,48,49, Thiri
+										Yadanar Whole Sales Market Compound, North Okkalapa Township, Yangon.</span>
+								</li>
+								<li><a href="#"><span class="fa fa-phone mr-3"></span><span class="text">+959 73109605
+											,<br>+959 73100362.</span></a></li>
+								<li><a href="#"><span class="fa fa-envelope mr-3"></span><span class="text">
+											yezawaung.attem@gmail.com</span></a></li>
 							</ul>
 						</div>
 					</div>
@@ -666,141 +710,157 @@ placed their trust on us and our excellent team of professionals.</p>
 			<div class="container">
 				<div class="row">
 					<div class="col-md-6 aside-stretch py-3">
-						
-						<p class="mb-0"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-							Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://www.dpsmap.com/" target="_blank">DPS.</a>
-							<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</footer>
-		
-		<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-			<div class="modal-dialog modal-dialog-centered" role="document">
-				<div class="modal-content">
-					<div class="modal-header">
-						<button type="button" class="close d-flex align-items-center justify-content-center" data-dismiss="modal" aria-label="Close">
-							<span aria-hidden="true" class="fa fa-close"></span>
-						</button>
-					</div>
-					<div class="modal-body p-4 p-md-5">
-						<form action="#" class="appointment-form ftco-animate">
-							<h3>Request Quote</h3>
-							<div class="">
-								<div class="form-group">
-									<input type="text" class="form-control" placeholder="First Name">
-								</div>
-								<div class="form-group">
-									<input type="text" class="form-control" placeholder="Last Name">
-								</div>
-								<div class="form-group">
-									<input type="text" class="form-control" placeholder="Phone">
-								</div>
-							</div>
-							<div class="">
-								<div class="form-group">
-									<div class="form-field">
-										<div class="select-wrap">
-											<div class="icon"><span class="fa fa-chevron-down"></span></div>
-											<select name="" id="" class="form-control">
-												<option value="">Select Your Services</option>
-												<option value="">Architecture</option>
-												<option value="">Renovation</option>
-												<option value="">Construction</option>
-												<option value="">Interior &amp; Exterior</option>
-												<option value="">Chemical Research</option>
-												<option value="">Petroleum &amp; Gas</option>
-												<option value="">Other Services</option>
-											</select>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="">
-								<div class="form-group">
-									<textarea name="" id="" cols="30" rows="4" class="form-control" placeholder="Message"></textarea>
-								</div>
-								<div class="form-group">
-									<input type="submit" value="Request A Quote" class="btn btn-primary py-3 px-4">
-								</div>
-							</div>
-						</form>
+
+						<p class="mb-0">
+							<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+							Copyright &copy;<script>
+								document.write(new Date().getFullYear());
+							</script> All rights reserved <i class="fa fa-heart" aria-hidden="true"></i> by <a
+								href="https://www.dpsmap.com/" target="_blank">DPS.</a>
+							<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+						</p>
 					</div>
 				</div>
 			</div>
 		</div>
+	</footer>
 
-		<!-- loader -->
-		<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+	<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+		aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close d-flex align-items-center justify-content-center"
+						data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true" class="fa fa-close"></span>
+					</button>
+				</div>
+				<div class="modal-body p-4 p-md-5">
+					<form action="#" class="appointment-form ftco-animate">
+						<h3>Request Quote</h3>
+						<div class="">
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="First Name">
+							</div>
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="Last Name">
+							</div>
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="Phone">
+							</div>
+						</div>
+						<div class="">
+							<div class="form-group">
+								<div class="form-field">
+									<div class="select-wrap">
+										<div class="icon"><span class="fa fa-chevron-down"></span></div>
+										<select name="" id="" class="form-control">
+											<option value="">Select Your Services</option>
+											<option value="">Architecture</option>
+											<option value="">Renovation</option>
+											<option value="">Construction</option>
+											<option value="">Interior &amp; Exterior</option>
+											<option value="">Chemical Research</option>
+											<option value="">Petroleum &amp; Gas</option>
+											<option value="">Other Services</option>
+										</select>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="">
+							<div class="form-group">
+								<textarea name="" id="" cols="30" rows="4" class="form-control"
+									placeholder="Message"></textarea>
+							</div>
+							<div class="form-group">
+								<input type="submit" value="Request A Quote" class="btn btn-primary py-3 px-4">
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
 
-		<script src="js/jquery.min.js"></script>
-		<script src="js/jquery-migrate-3.0.1.min.js"></script>
-		<script src="js/popper.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
-		<script src="js/jquery.easing.1.3.js"></script>
-		<script src="js/jquery.waypoints.min.js"></script>
-		<script src="js/jquery.stellar.min.js"></script>
-		<script src="js/owl.carousel.min.js"></script>
-		<script src="js/jquery.magnific-popup.min.js"></script>
-		<script src="js/jquery.animateNumber.min.js"></script>
-		<script src="js/bootstrap-datepicker.js"></script>
-		<script src="js/jquery.timepicker.min.js"></script>
-		<script src="js/scrollax.min.js"></script>
-		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
-		<script src="js/google-map.js"></script>
-		
-		<script src="js/main.js"></script>
-		<script>
-let slideIndex = 0;
-showSlides();
+	<!-- loader -->
+	<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
+			<circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+			<circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+				stroke="#F96D00" /></svg></div>
 
-function showSlides() {
-  const slides = document.getElementsByClassName("mySlides");
-  const dots = document.getElementsByClassName("dot");
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery-migrate-3.0.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.easing.1.3.js"></script>
+	<script src="js/jquery.waypoints.min.js"></script>
+	<script src="js/jquery.stellar.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/jquery.animateNumber.min.js"></script>
+	<script src="js/bootstrap-datepicker.js"></script>
+	<script src="js/jquery.timepicker.min.js"></script>
+	<script src="js/scrollax.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false">
+	</script>
+	<script src="js/google-map.js"></script>
 
-  for (let i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
+	<script src="js/main.js"></script>
+	<script>
+		let slideIndex = 0;
+		showSlides();
 
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}
+		function showSlides() {
+			const slides = document.getElementsByClassName("mySlides");
+			const dots = document.getElementsByClassName("dot");
 
-  for (let i = 0; i < dots.length; i++) {
-    dots[i].classList.remove("active");
-  }
+			for (let i = 0; i < slides.length; i++) {
+				slides[i].style.display = "none";
+			}
 
-  slides[slideIndex - 1].style.display = "block";
-  dots[slideIndex - 1].classList.add("active");
+			slideIndex++;
+			if (slideIndex > slides.length) {
+				slideIndex = 1
+			}
 
-  setTimeout(showSlides, 4000); // Change image every 4 seconds
-}
+			for (let i = 0; i < dots.length; i++) {
+				dots[i].classList.remove("active");
+			}
+
+			slides[slideIndex - 1].style.display = "block";
+			dots[slideIndex - 1].classList.add("active");
+
+			setTimeout(showSlides, 4000); // Change image every 4 seconds
+		}
 
 
-function currentSlide(n) {
-  slideIndex = n - 1;
-  showSlides();
-}
+		function currentSlide(n) {
+			slideIndex = n - 1;
+			showSlides();
+		}
 
-function openLightbox(imgElement) {
-  const lightbox = document.getElementById("lightbox");
-  const lightboxImg = document.getElementById("lightbox-img");
-  lightbox.style.display = "block";
-  lightboxImg.src = imgElement.src;
-}
+		function openLightbox(imgElement) {
+			const lightbox = document.getElementById("lightbox");
+			const lightboxImg = document.getElementById("lightbox-img");
+			lightbox.style.display = "block";
+			lightboxImg.src = imgElement.src;
+		}
 
-function closeLightbox() {
-  document.getElementById("lightbox").style.display = "none";
-}
-function openLightbox1(element) {
-  const imgSrc = element.querySelector('img').src;
-  document.getElementById("lightbox-img1").src = imgSrc;
-  document.getElementById("lightbox1").style.display = "block";
-}
+		function closeLightbox() {
+			document.getElementById("lightbox").style.display = "none";
+		}
 
-function closeLightbox1() {
-  document.getElementById("lightbox1").style.display = "none";
-}
-</script>
-	</body>
-	</html>
+		function openLightbox1(element) {
+			const imgSrc = element.querySelector('img').src;
+			document.getElementById("lightbox-img1").src = imgSrc;
+			document.getElementById("lightbox1").style.display = "block";
+		}
+
+		function closeLightbox1() {
+			document.getElementById("lightbox1").style.display = "none";
+		}
+	</script>
+</body>
+
+</html>
