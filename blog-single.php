@@ -129,8 +129,8 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
           <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
           <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
           <li class="nav-item"><a href="project.html" class="nav-link">Projects</a></li>
-          <li class="nav-item active"><a href="blog.php" class="nav-link">Blog</a></li>
           <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+          <li class="nav-item active"><a href="blog.php" class="nav-link">Blog</a></li>
         </ul>
         <a href="#" class="btn-custom" data-toggle="modal" data-target="#exampleModalCenter">Inquire Now</a>
       </div>
