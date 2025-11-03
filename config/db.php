@@ -4,8 +4,8 @@ ini_set('display_errors', 0);
 session_start();
 
 $servername = "localhost";
-$username = "attempt";
-$password = "attempt";
+$username = "root";
+$password = "linhtutkyaw";
 
 try {
     $conn = new PDO("mysql:host=$servername;dbname=attempt", $username, $password);

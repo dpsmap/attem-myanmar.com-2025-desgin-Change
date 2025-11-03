@@ -55,8 +55,7 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
 
   <link rel="stylesheet" href="css/flaticon.css">
   <link rel="stylesheet" href="css/style.css">
-  <link favicon href="images/favicon1.jpg" type="image/png" rel="icon">
-  <script src="https://kit.fontawesome.com/a2d9d6a64a.js" crossorigin="anonymous"></script>
+  <link favicon href="images/favicon2.png" type="image/png" rel="icon">
 </head>
 
 <body>
@@ -72,7 +71,8 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
         <div class="col-sm justify-content-center d-flex mb-md-0 mb-2">
 
         </div>
-        <div class="social-media col-sm-12 col-md-6 col-lg-7 d-flex topper align-items-center text-lg-right justify-content-end">
+        <div
+          class="social-media col-sm-12 col-md-6 col-lg-7 d-flex topper align-items-center text-lg-right justify-content-end">
           <p class="mb-0 d-flex">
             <a href="#" class="d-flex align-items-center justify-content-center"><span
                 class="fa fa-facebook-official"><i class="sr-only">Facebook</i></span></a>
@@ -84,6 +84,7 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
                   class="sr-only"></i></span></a>
             <a href="#" class="d-flex align-items-center justify-content-center"><span
                 class="fa fa-telegram"><i class="sr-only">Telegram</i></span></a>
+          </p>
         </div>
       </div>
     </div>
@@ -93,8 +94,7 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
       <div class="row d-flex align-items-start align-items-center px-3 px-md-0">
         <div class="col-md-4 d-flex mb-2 mb-md-0">
           <a class="navbar-brand d-flex align-items-center" href="index.html">
-            <span class="flaticon flaticon-crane"></span>
-            <span class="ml-2">Wilcon <small>Construction Company</small></span>
+            <img src="images/logo.JPG" alt="logo" style="width: 300px; height: 70px; margin-left: 10px;">
           </a>
         </div>
         <div class="col-md-4 d-flex topper mb-md-0 mb-2 align-items-center">
@@ -102,16 +102,20 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
             <span class="fa fa-map"></span>
           </div>
           <div class="pr-md-4 pl-md-3 pl-3 text">
-            <p class="con"><span>Free Call</span> <span>+1 234 456 78910</span></p>
+            <p class="con"><span>Free Call</span> <span>+959 73109605, +959 73100362
+              </span></p>
             <p class="con">Call Us Now 24/7 Customer Support</p>
           </div>
         </div>
         <div class="col-md-4 d-flex topper mb-md-0 align-items-center">
-          <div class="icon d-flex justify-content-center align-items-center"><span class="fa fa-paper-plane"></span>
+          <div class="icon d-flex justify-content-center align-items-center"><span
+              class="fa fa-building"></span>
           </div>
           <div class="text pl-3 pl-md-3">
-            <p class="hr"><span>Our Location</span></p>
-            <p class="con">198 West 21th Street, Suite 721 New York NY 10016</p>
+            <p class="hr"><span>Our Office</span></p>
+            <p class="con">L- 47,48,49, Thiri Yadanar Whole Sales Market Compound, North Okkalapa Township,
+              Yangon.
+            </p>
           </div>
         </div>
       </div>
@@ -126,13 +130,13 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
       <div class="collapse navbar-collapse" id="ftco-nav">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-          <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
-          <li class="nav-item"><a href="project.html" class="nav-link">Projects</a></li>
-          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
-          <li class="nav-item active"><a href="blog.php" class="nav-link">Blog</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link">Profile</a></li>
+          <li class="nav-item"><a href="services.html" class="nav-link">Products</a></li>
+          <li class="nav-item"><a href="project.html" class="nav-link">Photo Gallery</a></li>
+          <li class="nav-item active"><a href="contact.html" class="nav-link">Contact</a></li>
+          <li class="nav-item"><a href="blog.php" class="nav-link">Blog</a></li>
         </ul>
-        <a href="#" class="btn-custom" data-toggle="modal" data-target="#exampleModalCenter">Inquire Now</a>
+        <!-- <a href="#" class="btn-custom" data-toggle="modal" data-target="#exampleModalCenter">Inquire Now</a> -->
       </div>
     </div>
   </nav>
@@ -177,58 +181,62 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
         <div class="col-lg col-md-6">
           <div class="ftco-footer-widget">
             <h2 class="ftco-heading-2 d-flex align-items-center">About</h2>
-            <p>Far far away, behind the word mountains, far from the countries.</p>
-            <ul class="ftco-footer-social list-unstyled mt-4">
-              <li><a href="#"><span class="fa fa-twitter"></span></a></li>
-              <li><a href="#"><span class="fa fa-facebook"></span></a></li>
-              <li><a href="#"><span class="fa fa-instagram"></span></a></li>
-            </ul>
+            <p>Born in June,2012 .Two persons founded ( Aung & Tun ).One Head office & one factory in
+              Yangon,Myanmar.
+            </p>
+            <!-- <ul class="ftco-footer-social list-unstyled mt-4">
+							<li><a href="#"><span class="fa fa-twitter"></span></a></li>
+							<li><a href="#"><span class="fa fa-facebook"></span></a></li>
+							<li><a href="#"><span class="fa fa-instagram"></span></a></li>
+						</ul> -->
           </div>
         </div>
 
-        <div class="col-lg-4 col-md-6">
-          <div class="ftco-footer-widget">
-            <h2 class="ftco-heading-2">Links</h2>
-            <div class="d-flex">
-              <ul class="list-unstyled mr-md-4">
-                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Project</a></li>
-                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>About Us</a></li>
-                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Services</a></li>
-                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Blog Posts</a></li>
-                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Industries</a></li>
-              </ul>
-              <ul class="list-unstyled ml-md-5">
-                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Contact</a></li>
-                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Help</a></li>
-                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Privacy Policy</a></li>
-                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Terms of Use</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
+
 
         <div class="col-lg col-md-6">
           <div class="ftco-footer-widget">
             <h2 class="ftco-heading-2">Services</h2>
             <ul class="list-unstyled">
-              <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Customer Services</a></li>
-              <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Prompt Delivery</a></li>
-              <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Reliable Equipment</a></li>
-              <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>New Heavy Equipment</a></li>
+              <li><a href="product1.html"><span class="fa fa-chevron-right mr-2"></span>Generator
+                  Solution</a></li>
+              <li><a href="product2.html"><span class="fa fa-chevron-right mr-2"></span>Electrical
+                  Products</a></li>
+              <li><a href="product3.html"><span
+                    class="fa fa-chevron-right mr-2"></span>LPI<sup>®</sup>Series</a></li>
+              <li><a href="product4.html"><span
+                    class="fa fa-chevron-right mr-2"></span>NIMBUS<sup>®</sup>Lightning Rob</a></li>
             </ul>
           </div>
         </div>
 
         <div class="col-lg col-md-6">
           <div class="ftco-footer-widget">
+            <h2 class="ftco-heading-2">Photo Gallery</h2>
+            <ul class="list-unstyled">
+              <li><a href="project.html"><span class="fa fa-chevron-right mr-2"></span>LS Event Photos</a>
+              </li>
+              <li><a href="project1.html"><span class="fa fa-chevron-right mr-2"></span>Reference Photos
+                  1</a></li>
+              <li><a href="project2.html"><span class="fa fa-chevron-right mr-2"></span>Reference Photos
+                  2</a></li>
+              <li><a href="project3.html"><span class="fa fa-chevron-right mr-2"></span>Reference Photos
+                  3</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg col-md-6">
+          <div class="ftco-footer-widget">
             <h2 class="ftco-heading-2">Have a Questions?</h2>
             <div class="block-23 mb-3">
               <ul>
-                <li><span class="fa fa-map-marker mr-3"></span><span class="text">203 Fake St. Mountain View, San
-                    Francisco, California, USA</span></li>
-                <li><a href="#"><span class="fa fa-phone mr-3"></span><span class="text">+2 392 3929 210</span></a></li>
-                <li><a href="#"><span class="fa fa-paper-plane mr-3"></span><span
-                      class="text">info@yourdomain.com</span></a></li>
+                <li><span class="fa fa-map-marker mr-3"></span><span class="text">L- 47,48,49, Thiri
+                    Yadanar Whole Sales Market Compound, North Okkalapa Township, Yangon.</span>
+                </li>
+                <li><a href="#"><span class="fa fa-phone mr-3"></span><span class="text">+959 73109605
+                      ,<br>+959 73100362.</span></a></li>
+                <li><a href="#"><span class="fa fa-envelope mr-3"></span><span
+                      class="text">yezawaung.attem@gmail.com</span></a></li>
               </ul>
             </div>
           </div>
@@ -240,13 +248,12 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
         <div class="row">
           <div class="col-md-6 aside-stretch py-3">
 
-            <p class="mb-0"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-              Copyright &copy;
-              <script>
+            <p class="mb-0">
+              <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+              Copyright &copy;<script>
                 document.write(new Date().getFullYear());
-              </script> All rights reserved | This template is made
-              with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com"
-                target="_blank">Colorlib</a>
+              </script> All rights reserved <i class="fa fa-heart" aria-hidden="true"></i> by <a
+                href="https://www.dpsmap.com/" target="_blank">DPS.</a>
               <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
             </p>
           </div>
@@ -255,13 +262,13 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
     </div>
   </footer>
 
-  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
-    aria-hidden="true">
+  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+    aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <button type="button" class="close d-flex align-items-center justify-content-center" data-dismiss="modal"
-            aria-label="Close">
+          <button type="button" class="close d-flex align-items-center justify-content-center"
+            data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true" class="fa fa-close"></span>
           </button>
         </div>
@@ -300,7 +307,8 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
             </div>
             <div class="">
               <div class="form-group">
-                <textarea name="" id="" cols="30" rows="4" class="form-control" placeholder="Message"></textarea>
+                <textarea name="" id="" cols="30" rows="4" class="form-control"
+                  placeholder="Message"></textarea>
               </div>
               <div class="form-group">
                 <input type="submit" value="Request A Quote" class="btn btn-primary py-3 px-4">
@@ -311,7 +319,6 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
       </div>
     </div>
   </div>
-
 
   <!-- loader -->
   <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
@@ -333,8 +340,8 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
   <script src="js/bootstrap-datepicker.js"></script>
   <script src="js/jquery.timepicker.min.js"></script>
   <script src="js/scrollax.min.js"></script>
-  <script
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false">
+  </script>
   <script src="js/google-map.js"></script>
 
   <script src="js/main.js"></script>
