@@ -124,7 +124,7 @@
 				require_once("./config/db.php");
 				require_once("./config/helper.php");
 
-				$sql = "SELECT * FROM `posts`";
+				$sql = "SELECT * FROM `posts` ORDER BY id DESC";
 
 				$result = $conn->query($sql);
 				if ($result && $result !== false) {
