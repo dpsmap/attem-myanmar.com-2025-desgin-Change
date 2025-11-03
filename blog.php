@@ -154,7 +154,7 @@
 											</p>
 										</div>
 										<h3 class="heading"><a href="blog-single.php?id=' . $id . '">' . $title . '</a></h3>
-										<p>' . (strlen($desc) > 150 ? substr($desc, 0, 150) . '...' : $desc) . '</p>
+										<p>' . (strlen($desc) > 10 ? substr($desc, 0, 140) . '...' : $desc) . '</p>
 										<p><a href="blog-single.php?id=' . $id . '" class="btn btn-secondary py-2 px-3">Read more</a></p>
 									</div>
 								</div>
