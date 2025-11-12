@@ -118,7 +118,7 @@
 					<li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
 					<li class="nav-item"><a href="project.html" class="nav-link">Projects</a></li>
 					<li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
-					<li class="nav-item active"><a href="blog.php" class="nav-link">Blog</a></li>
+					<li class="nav-item active"><a href="blog.php" class="nav-link">News</a></li>
 				</ul>
 			</div>
 		</div>
@@ -130,23 +130,52 @@
 		<div class="container">
 			<div class="row no-gutters slider-text align-items-end justify-content-start">
 				<div class="col-md-9 ftco-animate pb-5">
-					<p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home <i class="fa fa-chevron-right"></i></a></span> <span>Our Blog <i class="fa fa-chevron-right"></i></span></p>
-					<h1 class="mb-3 bread">Our Blog</h1>
+					<p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home <i class="fa fa-chevron-right"></i></a></span> <span>Our News <i class="fa fa-chevron-right"></i></span></p>
+					<h1 class="mb-3 bread">Our News</h1>
 				</div>
 			</div>
 		</div>
 	</section>
 
+	
 	<div class="mt-4">
-		<!-- swiper start -->
 			 <div class="swiper">
-  <!-- Additional required wrapper -->
   <div class="swiper-wrapper">
-    <!-- Slides -->
-    <div class="swiper-slide"><iframe  width="2737" height="837" src="https://www.youtube.com/embed/Af-ZQkuTtCo?list=RDAf-ZQkuTtCo" title="ယုံကြည်နေပါ - Dannayi, Bunny Phyoe &amp; Bo Htet (Official visualizer with lyrics)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
-    <div class="swiper-slide"><iframe  width="2737" height="837" src="https://www.youtube.com/embed/WuXC3zbo83s?list=RDAf-ZQkuTtCo" title="Bunny Phyoe - We&#39;re Gonna Be Okay [Official Lyric Video]" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
-    <div class="swiper-slide"><iframe  width="2737" height="837" src="https://www.youtube.com/embed/yZYvz-v07iM?list=RDAf-ZQkuTtCo" title="Pone Yape - မင်းမချစ်တဲ့ လေးမိနစ် Ft.JAZ3 ( Official Music Video )" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
-    ...
+	 <?php
+				date_default_timezone_set("Asia/Yangon");
+				require_once("./config/db.php");
+				require_once("./config/helper.php");
+
+				$sql = "SELECT * FROM `utubes` ORDER BY id DESC";
+
+				$result = $conn->query($sql);
+				if ($result && $result !== false) {
+					$rows = [];
+					while ($row = $result->fetch(PDO::FETCH_ASSOC)) {
+						$rows[] = $row;
+					}
+
+					if (count($rows) > 0) {
+						foreach ($rows as $row) {
+							$id = isset($row['id']) ? intval($row['id']) : 0;
+							$name = isset($row['name']) ? htmlspecialchars($row['name'], ENT_QUOTES, 'UTF-8') : 'Untitled';
+							$url = isset($row['url']) ? htmlspecialchars($row['url'], ENT_QUOTES, 'UTF-8') : '';
+							// $img = isset($row['images']) && $row['images'] !== '' ? htmlspecialchars($row['images'], ENT_QUOTES, 'UTF-8') : 'images/no-image-available-icon-vector.jpg';
+							$created = isset($row['created_at']) && $row['created_at'] ? date('M. d, Y', strtotime($row['created_at'])) : '';
+							// output one blog card (matches the static markup below)
+							echo '
+							    <div class="swiper-slide"><iframe  width="2737" height="837" src="https://www.youtube.com/embed/'.$url.'"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+									</div>
+									
+									';
+						}
+					} else {
+						echo '<div class="col-12"><p>No posts found.</p></div>';
+					}
+				} else {
+					echo '<div class="col-12"><p>Error fetching posts.</p></div>';
+				}
+				?>
   </div>
   <!-- If we need pagination -->
   <div class="swiper-pagination"></div>
@@ -157,8 +186,10 @@
 
   <!-- If we need scrollbar -->
   <div class="swiper-scrollbar"></div>
+  
 </div>
 		<!-- swiper end -->
+		
 	</div>
 
 	<section class="ftco-section bg-light">

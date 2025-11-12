@@ -65,7 +65,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         echo "<p class=\"p-3 text-danger\">Failed to create post.</p>";
     }
     // 
-   
+
 }
 ?>
 
@@ -162,7 +162,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             <input type="reset" class="btn btn-outline-secondary" value="Reset">
                         </div>
                     </form>
-                     <hr>
+                    <hr>
                     <div class="" style="background-color: #333;padding:10px"></div>
                     <hr>
 
@@ -172,12 +172,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             <label for="uname" class="form-label">Youtube Title</label>
                             <input type="text" class="form-control" id="uname" name="uname" placeholder="Enter Youtube title">
                         </div>
-                        
-                         <div class="mb-3">
+
+                        <div class="mb-3">
                             <label for="utube" class="form-label">Youtube Links</label>
                             <input type="text" class="form-control" id="utube" name="utube" placeholder="Enter here Youtube Url">
                         </div>
-                            <button type="submit" class="btn btn-primary" value="1">Submit</button>
+                        <button type="submit" class="btn btn-primary" value="1">Submit</button>
 
                     </form>
 
@@ -227,9 +227,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     </div>
                     <!--  -->
                     <div>
-                         <hr>
-                    <div class="" style="background-color: #333;padding:20px"></div>
-                    <hr>
+                        <hr>
+                        <div class="" style="background-color: #333;padding:20px"></div>
+                        <hr>
 
                         <h5 class="mb-3">Youtube Lists</h5>
                         <table class="table table-hover border table-bordered display" id="example2">
@@ -254,7 +254,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                                             <th scope="row"><?php echo $row['id'] ?></th>
 
                                             <td> <?php echo htmlspecialchars($row['name']); ?></td>
-                                            <td><a href="<?php echo htmlspecialchars($row['url']); ?>" target="_blank" rel="noopener noreferrer"><?php echo htmlspecialchars($row['url']); ?></a></td>
+                                            <td><a href="https://youtu.be/<?php echo htmlspecialchars($row['url']); ?>" target="_blank" rel="noopener noreferrer">https://youtu.be/<?php echo htmlspecialchars($row['url']); ?></a></td>
                                             <td><?php echo htmlspecialchars($row['created_at']); ?></td>
                                         </tr>
                                     <?php
@@ -351,7 +351,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             dom: 'Bfrtip'
         });
 
-           var table2 = $('#example2').DataTable({
+        var table2 = $('#example2').DataTable({
             pageLength: 25,
             dom: 'Bfrtip'
         });
