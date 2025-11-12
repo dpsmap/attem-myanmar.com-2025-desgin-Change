@@ -64,6 +64,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         error_log("Post creation failed: " . $e->getMessage());
         echo "<p class=\"p-3 text-danger\">Failed to create post.</p>";
     }
+    // 
+   
 }
 ?>
 
@@ -160,6 +162,24 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             <input type="reset" class="btn btn-outline-secondary" value="Reset">
                         </div>
                     </form>
+                     <hr>
+                    <div class="" style="background-color: #333;padding:10px"></div>
+                    <hr>
+
+                    <form action="addYoutube.php" method="post">
+                        <input type="hidden" name="form-sub" value="1">
+                        <div class="mb-3">
+                            <label for="uname" class="form-label">Youtube Title</label>
+                            <input type="text" class="form-control" id="uname" name="uname" placeholder="Enter Youtube title">
+                        </div>
+                        
+                         <div class="mb-3">
+                            <label for="utube" class="form-label">Youtube Links</label>
+                            <input type="text" class="form-control" id="utube" name="utube" placeholder="Enter here Youtube Url">
+                        </div>
+                            <button type="submit" class="btn btn-primary" value="1">Submit</button>
+
+                    </form>
 
 
                     <hr>
@@ -192,6 +212,49 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
                                             <td><?php echo htmlspecialchars($row['name']); ?></td>
                                             <td><?php echo htmlspecialchars($row['description']); ?></td>
+                                            <td><?php echo htmlspecialchars($row['created_at']); ?></td>
+                                        </tr>
+                                    <?php
+                                    endwhile;
+                                else:
+                                    ?>
+                                    <tr>
+                                        <td colspan="4" class="text-center text-muted">No posts found.</td>
+                                    </tr>
+                                <?php endif; ?>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!--  -->
+                    <div>
+                         <hr>
+                    <div class="" style="background-color: #333;padding:20px"></div>
+                    <hr>
+
+                        <h5 class="mb-3">Youtube Lists</h5>
+                        <table class="table table-hover border table-bordered display" id="example2">
+                            <thead class="table-dark">
+                                <tr>
+                                    <th scope="col">ID</th>
+                                    <th scope="col">name</th>
+                                    <th scope="col">url</th>
+                                    <th scope="col">Created At</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <?php
+                                $sql = "SELECT * FROM `utubes` ORDER BY id DESC";
+                                $stmt = $conn->query($sql);
+
+                                if ($stmt && $stmt->rowCount() > 0):
+                                    $count = 1;
+                                    while ($row = $stmt->fetch(PDO::FETCH_ASSOC)):
+                                ?>
+                                        <tr>
+                                            <th scope="row"><?php echo $row['id'] ?></th>
+
+                                            <td> <?php echo htmlspecialchars($row['name']); ?></td>
+                                            <td><a href="<?php echo htmlspecialchars($row['url']); ?>" target="_blank" rel="noopener noreferrer"><?php echo htmlspecialchars($row['url']); ?></a></td>
                                             <td><?php echo htmlspecialchars($row['created_at']); ?></td>
                                         </tr>
                                     <?php
@@ -284,6 +347,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <script src="https://cdn.datatables.net/responsive/2.5.0/js/dataTables.responsive.min.js"></script>
     <script>
         var table = $('#example').DataTable({
+            pageLength: 25,
+            dom: 'Bfrtip'
+        });
+
+           var table2 = $('#example2').DataTable({
             pageLength: 25,
             dom: 'Bfrtip'
         });

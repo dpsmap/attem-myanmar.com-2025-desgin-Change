@@ -18,11 +18,32 @@
 
 	<link rel="stylesheet" href="css/bootstrap-datepicker.css">
 	<link rel="stylesheet" href="css/jquery.timepicker.css">
-
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+/>
 	<link rel="stylesheet" href="css/flaticon.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link favicon href="images/favicon1.jpg" type="image/png" rel="icon">
 	<script src="https://kit.fontawesome.com/a2d9d6a64a.js" crossorigin="anonymous"></script>
+	<style>
+		.swiper {
+  width: 80%;
+  height: 500px;
+}
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper-slide iframe {
+  width: 100%;
+  height: 70vh; /* သင်လိုချင်တဲ့အမြင့်ကိုပြင်နိုင်ပါတယ် */
+  object-fit: cover;
+  border: none;
+  border-radius: 10px;
+}
+	</style>
 </head>
 
 <body>
@@ -116,8 +137,34 @@
 		</div>
 	</section>
 
+	<div class="mt-4">
+		<!-- swiper start -->
+			 <div class="swiper">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide"><iframe  width="2737" height="837" src="https://www.youtube.com/embed/Af-ZQkuTtCo?list=RDAf-ZQkuTtCo" title="ယုံကြည်နေပါ - Dannayi, Bunny Phyoe &amp; Bo Htet (Official visualizer with lyrics)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+    <div class="swiper-slide"><iframe  width="2737" height="837" src="https://www.youtube.com/embed/WuXC3zbo83s?list=RDAf-ZQkuTtCo" title="Bunny Phyoe - We&#39;re Gonna Be Okay [Official Lyric Video]" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+    <div class="swiper-slide"><iframe  width="2737" height="837" src="https://www.youtube.com/embed/yZYvz-v07iM?list=RDAf-ZQkuTtCo" title="Pone Yape - မင်းမချစ်တဲ့ လေးမိနစ် Ft.JAZ3 ( Official Music Video )" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+    ...
+  </div>
+  <!-- If we need pagination -->
+  <div class="swiper-pagination"></div>
+
+  <!-- If we need navigation buttons -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+
+  <!-- If we need scrollbar -->
+  <div class="swiper-scrollbar"></div>
+</div>
+		<!-- swiper end -->
+	</div>
+
 	<section class="ftco-section bg-light">
+		
 		<div class="container">
+			
 			<div class="row d-flex">
 				<?php
 				date_default_timezone_set("Asia/Yangon");
@@ -319,6 +366,44 @@
 	<script src="js/scrollax.min.js"></script>
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
 	<script src="js/google-map.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+	
+				<script>
+					const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+    speed: 400,
+  spaceBetween: 100,
+  autoHeight:true,
+   autoplay: {
+    delay: 5000,
+    disableOnInteraction: false,
+  },
+  
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+});
+
+document.querySelectorAll('.swiper-slide iframe').forEach((iframe) => {
+  iframe.addEventListener('mouseenter', () => swiper.autoplay.stop());
+  iframe.addEventListener('mouseleave', () => swiper.autoplay.start());
+});
+				</script>
 
 	<script src="js/main.js"></script>
 
